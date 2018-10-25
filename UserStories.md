@@ -1,11 +1,39 @@
 # User Stories
 
-**Project:** ConOrg
+**Project:** Convention Organizer
 
-## xxx (Second-level headings optionally may be used to group/categorize USs by type of functionality)
+## Feedback
 
-- US xxx (Title of user story goes here)
-  - Description: xxx (Description of user store goes here)
-  - Estimate: xxx (Number of days of work required to implement the US)
-  - Priority: xxx (US priority number goes here)
-  - Status: xxx (US status)
+- US Panel Rating
+  - Description: User will be able to rate how much they enjoyed the panel
+  - Estimate: 1 day
+  - Priority: 4
+  - Status: Incomplete
+
+- US Panel Feedback
+  - Description: User will be able to provide text feedback regarding the panel
+  - Estimate: 1 day
+  - Priority: 4
+  - Status: Incomplete
+
+## Applications
+
+- US Panelist Approval Status
+  - Description: User will be able to check application status for submitted panel
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
+
+## Payment
+
+- US Multiple Currency
+  - Description: User will be able to input any form of currency, and it will be converted to currency in use
+  - Estimate: 3
+  - Priority: 2
+  - Status: Incomplete
+
+- US Receipt
+  - Description: User will be able to view an order receipt with payment amount and event dates as well as ticket tier
+  - Estimate: 2
+  - Priority: 1
+  - Status: Incomplete
