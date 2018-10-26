@@ -22,6 +22,18 @@
   - Priority: 3
   - Status: Incomplete
 
+- US Game Rating
+  - Description: User will be able to rate a particular game 
+  - Estimate: 1 day
+  - Priority: 3
+  - Status: Incomplete
+
+- US Dealer Rating
+  - Description: User will be able to rate a particular dealer 
+  - Estimate: 1 day
+  - Priority: 3 
+  - Status: Incomplete
+
 ## Applications
 
 - US Panelist Approval Status
@@ -42,6 +54,12 @@
   - Priority: 2
   - Status: Incomplete
 
+- US Member Approval Status 
+  - Description: User will be able to check application status for members 
+  - Estimate: 2
+  - Priority: 2 
+  - Status: Incomplete 
+
 ## Payment
 
 - US Multiple Currency
@@ -55,6 +73,12 @@
   - Estimate: 2
   - Priority: 1
   - Status: Incomplete
+
+- US Discount
+  - Description: User will be able to check what discounts are available for them 
+  - Estimate: 2
+  - Priority 2
+  - Status: Incomplete 
   
 ## Accessibility
 
@@ -69,3 +93,10 @@
   - Estimate: 2
   - Priority: 2
   - Status: Incomplete
+
+- US Check bio for guests 
+  - Description: The user should be able to access the bios of different guests 
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
+
