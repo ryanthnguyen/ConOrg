@@ -23,15 +23,15 @@
   - Status: Incomplete
 
 - US Game Rating
-  - Description: User will be able to rate a particular game 
+  - Description: User will be able to rate a particular game
   - Estimate: 1 day
   - Priority: 3
   - Status: Incomplete
 
 - US Dealer Rating
-  - Description: User will be able to rate a particular dealer 
+  - Description: User will be able to rate a particular dealer
   - Estimate: 1 day
-  - Priority: 3 
+  - Priority: 3
   - Status: Incomplete
 
 ## Applications
@@ -54,11 +54,11 @@
   - Priority: 2
   - Status: Incomplete
 
-- US Member Approval Status 
+- US Member Approval Status
   - Description: User will be able to check application status for members 
   - Estimate: 2
-  - Priority: 2 
-  - Status: Incomplete 
+  - Priority: 2
+  - Status: Incomplete
 
 ## Payment
 
@@ -75,10 +75,10 @@
   - Status: Incomplete
 
 - US Discount
-  - Description: User will be able to check what discounts are available for them 
+  - Description: User will be able to check what discounts are available for them
   - Estimate: 2
   - Priority 2
-  - Status: Incomplete 
+  - Status: Incomplete
   
 ## Accessibility
 
@@ -94,9 +94,8 @@
   - Priority: 2
   - Status: Incomplete
 
-- US Check bio for guests 
-  - Description: The user should be able to access the bios of different guests 
+- US Check bio for guests
+  - Description: The user should be able to access the bios of different guests
   - Estimate: 2
   - Priority: 2
   - Status: Incomplete
-
