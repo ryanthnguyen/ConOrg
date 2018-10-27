@@ -79,6 +79,12 @@
   - Estimate: 2
   - Priority 2
   - Status: Incomplete
+
+- US Payment Method
+  - Description: User should be able to choose how to pay. (Paypal/Credit Card)
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
   
 ## Accessibility
 
@@ -96,6 +102,32 @@
 
 - US Check bio for guests
   - Description: The user should be able to access the bios of different guests
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
+
+## Admin
+
+- US Admin Edit page
+  - Description: An admin should be able to edit the front page
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
+
+- US Admin review applications
+  - Description: An admin should be able to view and approve/disallow applications
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
+
+- US Admin view registered guests
+  - Description: An admin should be able to view who all is registered guests
+  - Estimate: 2
+  - Priority: 2
+  - Status: Incomplete
+
+- US Admin Make announcements 
+  - Description: An admin should be able to make announcements on the home page
   - Estimate: 2
   - Priority: 2
   - Status: Incomplete
