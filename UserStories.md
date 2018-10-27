@@ -126,7 +126,7 @@
   - Priority: 2
   - Status: Incomplete
 
-- US Admin Make announcements 
+- US Admin Make announcements
   - Description: An admin should be able to make announcements on the home page
   - Estimate: 2
   - Priority: 2
