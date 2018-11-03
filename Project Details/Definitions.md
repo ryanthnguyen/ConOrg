@@ -22,3 +22,4 @@
 - Dealer: Booth with goods for sale
 - Pre-registration: Ability to sign up for the event prior to its occurrence
 - Home: Local hub with direct links to pertinent pages regarding overall event
+- Guest of Honor: A person, often well known or famous, in a given category who is attending the convention by invitation 
