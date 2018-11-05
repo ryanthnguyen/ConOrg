@@ -6,11 +6,11 @@
 ## Special Roles
 
 - Project Coordinator: Wesley Jones
-- Quality Assurance Czar: xxx (Team Member Name)
+- Quality Assurance Czar: Xavier
 - Video Demo Creators:
+  - Josh
   - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
-  - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
-- Demo-Booth Operator: xxx (Team Member Name; filled in at end of iteration)
+- Demo-Booth Operator: Ryan
 
 ## Tasks: Wesley Jones
 
@@ -46,4 +46,16 @@
 - How to Evaluate: ConOrg UML Diagram.png contains UML model that shows the relationships of users, admins, registration form, GM form, panelist form, and dealer form
 - Outcome of Task: Can now create models for the project. Create a visible transparency to include certain attributes for different models. 
 
-## Tasks: xxx (Team Member Name)
+## Tasks: Josh Rhoades
+
+### Task 1: Create Admin User Page
+
+- Description: Create an Admin user page so that information is able to be checked as well as edited easily from one main page. 
+- How to Evaluate: Check page views once completed and then use the available options to view data. 
+- Outcome of Task: xxx
+
+### Task 2: Input Validation on Login Credentials
+
+- Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login. 
+- How to Evaluate: Try a basic SQL injection.
+- Outcome of Task: xxx
