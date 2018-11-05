@@ -38,4 +38,11 @@
 - How to Evaluate: The routes file is properly written such that links operate as described
 - Outcome of Task: xxx (Description; filled in at end of iteration)
 
+## Tasks: Ryan Nguyen
+
+### Task 4: Class Diagram Model
+- Description: Created UML model diagram to show the relationships of users, admins, registration form, GM form, panelist form, and dealer form in order to easily navigate and create the models and their relationships easily. 
+- How to Evaluate: ConOrg UML Diagram.png contains UML model that shows the relationships of users, admins, registration form, GM form, panelist form, and dealer form
+- Outcome of Task: Can now create models for the project. Create a visible transparency to include certain attributes for different models. 
+
 ## Tasks: xxx (Team Member Name)
