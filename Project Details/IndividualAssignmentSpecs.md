@@ -59,3 +59,17 @@
 - Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login. 
 - How to Evaluate: Try a basic SQL injection.
 - Outcome of Task: xxx
+
+## Tasks: Xavier Tilley
+
+### Task 1: Create static information pages
+
+- Description: Create static information pages to inform site vistors about the convention. 
+- How to Evaluate: Guest, Panelest, Gaming, Hotel, and About pages should exist, be readable and be routed to properly.
+- Outcome of Task: xxx
+
+### Task 2: Style the pages
+
+- Description: Create CSS files to properly style the pages of the site.
+- How to Evaluate: The pages should reflect the appropriate wireframe.
+- Outcome of Task: xxx
