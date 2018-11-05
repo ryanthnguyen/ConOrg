@@ -55,9 +55,39 @@
   - Status: Incomplete
 
 - US Member Approval Status
-  - Description: User will be able to check application status for members 
+  - Description: User will be able to check application status for members
   - Estimate: 2
   - Priority: 2
+  - Status: Incomplete
+
+- US Apply for panelist
+  - Description: The user should be able to apply to be a panelist for a panel of their interest and upload a headshot
+  - Estimate: 2
+  - Priority: 1
+  - Status: Incomplete
+
+- US Apply to be a dealer
+  - Description: The user should be able to apply to be a dealer
+  - Estimate: 1
+  - Priority: 2
+  - Status: Incomplete
+
+- US Apply to be a game master
+  - Description: The user should be able to apply to run a game
+  - Estimate: 1
+  - Priority: 2
+  - Status: Incomplete
+
+- US Submit more games
+  - Description: The game master should be able to submit more games to run once logged in
+  - Estimate: 2
+  - Priority: 1
+  - Status: Incomplete
+
+- US Submit request for ticket to convention
+  - Description: The user should be able to select the dates of attendance and then submit for payment
+  - Estimate: 2
+  - Priority: 1
   - Status: Incomplete
 
 ## Payment
@@ -104,6 +134,24 @@
   - Description: The user should be able to access the bios of different guests
   - Estimate: 2
   - Priority: 2
+  - Status: Incomplete
+
+- US Create an account
+  - Description: The user should be able to create an account
+  - Estimate: 3
+  - Priority: 1
+  - Status: Incomplete
+
+- US Login to created account
+  - Description: The user should be able login to a created account
+  - Estimate: 2
+  - Priority: 1
+  - Status: Incomplete
+
+- US Calendar of events
+  - Description: The user should be able to access a calendar of schedule events to be able to plan on what to go to
+  - Estimate: 2
+  - Priority: 1
   - Status: Incomplete
 
 ## Admin
