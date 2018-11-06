@@ -40,11 +40,23 @@
 
 ## Tasks: Ryan Nguyen
 
-### Task 1: Class Diagram Model
+### Task 1: Create models 
 
-- Description: Created UML model diagram to show the relationships of users, admins, registration form, GM form, panelist form, and dealer form in order to easily navigate and create the models and their relationships easily.
-- How to Evaluate: ConOrg UML Diagram.png contains UML model that shows the relationships of users, admins, registration form, GM form, panelist form, and dealer form
-- Outcome of Task: Can now create models for the project. Create a visible transparency to include certain attributes for different models. 
+- Description: Create all the models for the website.
+- How to Evaluate: Check the models in the source code. 
+- Outcome of Task: xxx
+
+### Task 2: Create validations for the models
+
+- Description: Create validations for each model in order to prevent incorrect input. 
+- How to Evaluate: Check by entering in correct inputs and incorrect inputs. 
+- Outcome of Task: xxx
+
+### Task 3: Implement database for the models
+
+- Description: Create database to store user's information. 
+- How to Evaluation: check by looking at the DB source code. 
+- Outcome of Task: xxx 
 
 ## Tasks: Josh Rhoades
 
