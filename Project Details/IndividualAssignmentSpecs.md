@@ -50,14 +50,20 @@
 
 ### Task 1: Create Admin User Page
 
-- Description: Create an Admin user page so that information is able to be checked as well as edited easily from one main page. 
+- Description: Create an Admin user paged based off the general wire-frame provided so that information is able to be checked as well as edited easily from one main page. 
 - How to Evaluate: Check page views once completed and then use the available options to view data. 
 - Outcome of Task: xxx
 
 ### Task 2: Input Validation on Login Credentials
 
-- Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login. 
+- Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login.
 - How to Evaluate: Try a basic SQL injection.
+- Outcome of Task: xxx
+
+### Task 3: General Login Credentials
+
+- Description: Create a login portal for users so they are able to securely submit applications.
+- How to Evaluate: Create a user login and boom!
 - Outcome of Task: xxx
 
 ## Tasks: Xavier Tilley
