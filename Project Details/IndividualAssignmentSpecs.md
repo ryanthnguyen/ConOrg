@@ -40,35 +40,35 @@
 
 ## Tasks: Ryan Nguyen
 
-### Task 1: Create models 
+### Task 1: Create models
 
 - Description: Create all the models for the website.
-- How to Evaluate: Check the models in the source code. 
+- How to Evaluate: Check the models in the source code.
 - Outcome of Task: xxx
 
 ### Task 2: Create validations for the models
 
-- Description: Create validations for each model in order to prevent incorrect input. 
-- How to Evaluate: Check by entering in correct inputs and incorrect inputs. 
+- Description: Create validations for each model in order to prevent incorrect input.
+- How to Evaluate: Check by entering in correct inputs and incorrect inputs.
 - Outcome of Task: xxx
 
 ### Task 3: Implement database for the models
 
-- Description: Create database to store user's information. 
-- How to Evaluation: check by looking at the DB source code. 
-- Outcome of Task: xxx 
+- Description: Create database to store user's information.
+- How to Evaluation: check by looking at the DB source code.
+- Outcome of Task: xxx
 
 ## Tasks: Josh Rhoades
 
 ### Task 1: Create Admin User Page
 
-- Description: Create an Admin user page so that information is able to be checked as well as edited easily from one main page. 
-- How to Evaluate: Check page views once completed and then use the available options to view data. 
+- Description: Create an Admin user page so that information is able to be checked as well as edited easily from one main page.
+- How to Evaluate: Check page views once completed and then use the available options to view data.
 - Outcome of Task: xxx
 
 ### Task 2: Input Validation on Login Credentials
 
-- Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login. 
+- Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login.
 - How to Evaluate: Try a basic SQL injection.
 - Outcome of Task: xxx
 
@@ -76,8 +76,8 @@
 
 ### Task 1: Create static information pages
 
-- Description: Create static information pages to inform site vistors about the convention. 
-- How to Evaluate: Guest, Panelest, Gaming, Hotel, and About pages should exist, be readable and be routed to properly.
+- Description: Create static information pages to inform site visitors about the convention.
+- How to Evaluate: Guest, Panelist, Gaming, Hotel, and About pages should exist, be readable and be routed to properly.
 - Outcome of Task: xxx
 
 ### Task 2: Style the pages
