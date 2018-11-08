@@ -10,5 +10,27 @@ class PagesController < ApplicationController
     end
     def userauth
         #render user signup/login from userauth.html.erb
+    end
+    def pricinginformation
+        #render user signup/login from userauth.html.erb
+    end
+    def gameinfo
+        #render user signup/login from userauth.html.erb
+    end
+    def hotels
+        #render user signup/login from userauth.html.erb
+    end
+    def panelinfo
+        #render user signup/login from userauth.html.erb
+    end
+    def applications
+        #render user signup/login from userauth.html.erb
+    end
+    def profilepage
+        #render user signup/login from userauth.html.erb
+    end
+    def dealerinfo
+        #render user signup/login from userauth.html.erb
+    end
 
 end

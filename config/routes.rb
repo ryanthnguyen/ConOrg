@@ -7,5 +7,12 @@ Rails.application.routes.draw do
   get 'eventinfo', to: 'pages#eventinfo', as: 'eventinfo'
   # these may need changing as models come into play
   get 'userauth', to: 'pages#userauth', as: 'userauth'
+  get 'hotels', to: 'pages#hotels', as: 'hotels'
+  get 'gameinfo', to: 'pages#gameinfo', as: 'gameinfo'
+  get 'pricinginformation', to: 'pages#pricinginformation', as: 'pricinginformation'
   get 'schedule', to: 'pages#schedule', as: 'schedule'
+  get 'panelinfo', to: 'pages#panelinfo', as: 'panelinfo'
+  get 'profilepage', to: 'pages#profilepage', as: 'profilepage'
+  get 'dealerinfo', to: 'pages#dealerinfo', as: 'dealerinfo'
+  get 'applications', to: 'pages#applications', as: 'applications'
 end
