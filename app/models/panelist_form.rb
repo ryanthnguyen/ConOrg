@@ -1,0 +1,2 @@
+class PanelistForm < ApplicationRecord
+end

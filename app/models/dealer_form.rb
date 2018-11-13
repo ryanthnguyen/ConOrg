@@ -1,0 +1,2 @@
+class DealerForm < ApplicationRecord
+end
