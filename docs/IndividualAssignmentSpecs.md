@@ -20,11 +20,11 @@
 - How to Evaluate: This should be evaluated by looking at each of the available model.rb's and seeing that they are properly configured to handled association.
 - Outcome of Task: The outcome is that Model associations will be made such that users and admins can properly see, edit, or modify applications for the convention.
 
-### Task 2: Sitemap
+### Task 2: User Model Controller
 
-- Description: A sitemap to follow is generated
-- How to Evaluate: The connection of pages seems reasonable and likely to be able to accomplish the customer's needs
-- Outcome of Task: A basic layout for use will be created, with changes possible, but the core structure understood
+- Description: Generate the user model controller, as well as write create, update, and destroy functions. Also create the associated html page plus controller code.
+- How to Evaluate: The User page should have the ability to create a user, edit a users information, show the user information, or delete a user.
+- Outcome of Task: The user page will be set up in a bare bones state to allow for user modifications and additions.
 
 ### Task 3: Page creation
 
