@@ -14,11 +14,11 @@
 
 ## Tasks: Wesley Jones
 
-### Task 1: Code Skeleton
+### Task 1: Model associations
 
-- Description: This task is specifically to get a code skeleton running such that team members may begin making contributions
-- How to Evaluate: This should be evaluated under the pretense that a decent basis for all members can begin their work, i.e. correct base gemsets installed and project properly initialized
-- Outcome of Task: The outcome is that a basic home page will exits as well as bootstrap installed
+- Description: Upon generation of all models, create the necessary associations per specification in the provided UML diagram
+- How to Evaluate: This should be evaluated by looking at each of the available model.rb's and seeing that they are properly configured to handled association.
+- Outcome of Task: The outcome is that Model associations will be made such that users and admins can properly see, edit, or modify applications for the convention.
 
 ### Task 2: Sitemap
 
