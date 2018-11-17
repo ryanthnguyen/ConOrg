@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_13_231735) do
+ActiveRecord::Schema.define(version: 2018_11_17_184950) do
 
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
@@ -46,6 +46,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.string "list_names_ages_of_extra_members"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "gm_form1s", force: :cascade do |t|
@@ -58,6 +60,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.integer "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "gm_form2s", force: :cascade do |t|
@@ -71,6 +75,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.string "games"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "panelist_forms", force: :cascade do |t|
@@ -100,6 +106,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.integer "amount_of_panels_at_convention"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "registration_forms", force: :cascade do |t|
@@ -114,6 +122,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.string "coupon_codes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "users", force: :cascade do |t|

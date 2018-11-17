@@ -13,7 +13,11 @@
 #  zip        :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  admin_id   :integer
+#  user_id    :integer
 #
 
 class GmForm2 < ApplicationRecord
+    belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form2s
+    belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :gm_form2s, optional: true
 end

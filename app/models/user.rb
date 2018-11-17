@@ -18,4 +18,10 @@
 #
 
 class User < ApplicationRecord
+    #I changed around a couple of 1 to 1 to 1 to many
+    has_one :dealer_forms, class_name: 'DealerForm', foreign_key: 'user_id', inverse_of: :user, dependent: :destroy
+    has_one :gm_form1s, class_name: 'GmForm1', foreign_key: 'user_id', inverse_of: :user, dependent: :destroy
+    has_many :gm_form2s, class_name: 'GmForm2', foreign_key: 'user_id', inverse_of: :user, dependent: :destroy
+    has_many :panelist_forms, class_name: 'PanelistForm', foreign_key: 'user_id', inverse_of: :user, dependent: :destroy
+    has_one :registraion_forms, class_name: 'RegistraionForm', foreign_key: 'user_id', inverse_of: :user, dependent: :destroy
 end

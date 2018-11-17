@@ -17,4 +17,9 @@
 #
 
 class Admin < ApplicationRecord
+    has_many :dealer_forms, class_name: 'DealerForm', foreign_key: 'admin_id', inverse_of: :admin, dependent: :destroy
+    has_many :gm_form1s, class_name: 'GmForm1', foreign_key: 'admin_id', inverse_of: :admin, dependent: :destroy
+    has_many :gm_form2s, class_name: 'GmForm2', foreign_key: 'admin_id', inverse_of: :admin, dependent: :destroy
+    has_many :panelist_forms, class_name: 'PanelistForm', foreign_key: 'admin_id', inverse_of: :admin, dependent: :destroy
+    has_many :registraion_forms, class_name: 'RegistraionForm', foreign_key: 'admin_id', inverse_of: :admin, dependent: :destroy
 end
