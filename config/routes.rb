@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'dealerinfo', to: 'pages#dealerinfo', as: 'dealerinfo'
   get 'applications', to: 'pages#applications', as: 'applications'
 
+<<<<<<< HEAD
   get 'users', to: 'users#index', as: 'users'
   get 'user/new', to: 'user#new', as: 'new_user'
   post 'users', to: 'users#create'
@@ -26,4 +27,17 @@ Rails.application.routes.draw do
   put 'users/:id', to: 'users#update'
   delete 'users/:id', to: 'users#destroy'
   get 'users/:id/home', to: 'users#home', as: 'user_home'
+
+
+  get 'admins', to: 'admins#index', as: 'admins'
+  get 'admin/new', to: 'admin#new', as: 'new_admin'
+  post 'admins', to: 'admins#create'
+  get 'admins/:id/edit', to: 'admins#edit', as: 'edit_admin'
+  get 'admins/:admin_id/appraisals/new', to: 'appraisals#new', as: 'new_appraisal'
+  get 'appraiers/:id', to: 'admins#show', as: 'admin'
+  patch 'admins/:id', to: 'admins#update'
+  put 'admins/:id', to: 'admins#update'
+  delete 'admins/:id', to: 'admins#destroy'
+  get 'admins/:id/home', to: 'admins#home', as: 'admin_home'
+
 end
