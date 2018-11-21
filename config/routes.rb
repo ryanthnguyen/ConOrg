@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get 'dealerinfo', to: 'pages#dealerinfo', as: 'dealerinfo'
   get 'applications', to: 'pages#applications', as: 'applications'
 
-<<<<<<< HEAD
+
   get 'users', to: 'users#index', as: 'users'
   get 'user/new', to: 'user#new', as: 'new_user'
   post 'users', to: 'users#create'
