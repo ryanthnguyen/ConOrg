@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
 
 
+
   get 'users', to: 'users#index', as: 'users'
   get 'user/new', to: 'user#new', as: 'new_user'
   post 'users', to: 'users#create'
@@ -58,5 +59,20 @@ Rails.application.routes.draw do
   patch 'gm_form2s/:id', to: 'gm_form2s#update', as: 'gm_form2'
   put 'gm_form2s/:id', to: 'gm_form2s#update'
   delete 'gm_form2s/:id', to: 'gm_form2s#destroy'
+
+
+
+
+
+
+
+
+
+  get 'registration_forms', to: 'registration_forms#index', as: 'registration_forms_index'
+  post 'registration_forms', to: 'registration_forms#create', as: 'registration_forms'
+  get 'registration_forms/:id/edit', to: 'registration_forms#edit', as: 'edit_registration_form'
+  patch 'registration_forms/:id', to: 'registration_forms#update', as: 'registration_form'
+  put 'registration_forms/:id', to: 'registration_forms#update'
+  delete 'registration_forms/:id', to: 'registration_forms#destroy'
 
 end
