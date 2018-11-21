@@ -27,12 +27,13 @@ Rails.application.routes.draw do
   get 'users/:user_id/dealer_forms/new', to: 'dealer_forms#new', as: 'new_dealer_form'
   get 'users/:user_id/gm_form1s/new', to: 'gm_form1s#new', as: 'new_gm_form1'
   get 'users/:user_id/gm_form2s/new', to: 'gm_form2s#new', as: 'new_gm_form2'
+  get 'users/:user_id/panelist_forms/new', to: 'panelist_forms#new', as: 'new_panelist_form'
   get 'users/:id', to: 'users#show', as: 'user'
   patch 'users/:id', to: 'users#update'
   put 'users/:id', to: 'users#update'
   delete 'users/:id', to: 'users#destroy'
   get 'users/:id/home', to: 'users#home', as: 'user_home'
-  get 'users/:user_id/panelist_forms/new', to: 'panelist_forms#new', as: 'new_panelist_form'
+  
 
   get 'admins', to: 'admins#index', as: 'admins'
   get 'admin/new', to: 'admin#new', as: 'new_admin'
