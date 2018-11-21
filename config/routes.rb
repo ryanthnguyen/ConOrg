@@ -63,7 +63,12 @@ Rails.application.routes.draw do
 
 
 
-
+  get 'dealer_forms', to: 'dealer_forms#index', as: 'dealer_forms_index'
+  post 'dealer_forms', to: 'dealer_forms#create', as: 'dealer_forms'
+  get 'dealer_forms/:id/edit', to: 'dealer_forms#edit', as: 'edit_dealer_form'
+  patch 'dealer_forms/:id', to: 'dealer_forms#update', as: 'dealer_form'
+  put 'dealer_forms/:id', to: 'dealer_forms#update'
+  delete 'dealer_forms/:id', to: 'dealer_forms#destroy'
 
 
 
