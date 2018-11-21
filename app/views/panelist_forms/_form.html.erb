@@ -1,0 +1,102 @@
+<%= form_with model: @panelist_form, local: true do |form| %>
+     <%= hidden_field_tag :panelist_form_id, panelist_form_id%>
+     <div class="field">
+        <%= form.label :title %>
+        <%= form.text_field :title, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :last_name %>
+        <%= form.text_field :last_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :adress %>
+        <%= form.text_field :address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :city %>
+        <%= form.text_field :city, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :state %>
+        <%= form.text_field :state, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :zip %>
+        <%= form.text_field :zip, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :age %>
+        <%= form.text_field :age, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :pen_name %>
+        <%= form.text_field :pen_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :badge_name %>
+        <%= form.text_field :badge_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :phone %>
+        <%= form.text_field :phone, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :email_address %>
+        <%= form.text_field :email_address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :website %>
+        <%= form.text_field :website, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :availability %>
+        <%= form.text_field :availability, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :primary_professional_focus %>
+        <%= form.text_field :primary_professional_focus, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :secondary_professional_focus %>
+        <%= form.text_field :secondary_professional_focus, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :panelist_before %>
+        <%= form.text_field :panelist_before, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :time_in_pro_row %>
+        <%= form.text_field :time_in_pro_row, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :amount_of_pro_row %>
+        <%= form.text_field :amount_of_pro_row, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :place_in_art_room %>
+        <%= form.text_field :place_in_art_room, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :recent_credits %>
+        <%= form.text_field :recent_credits, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :short_biography %>
+        <%= form.text_field :short_biography, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :panel_suggestions %>
+        <%= form.text_field :panel_suggestions, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :amount_of_panels_at_convention %>
+        <%= form.text_field :amount_of_panels_at_convention, class: 'form-control' %>
+    </div>
+        <div class="actions">
+        <%= form.submit 'Update panelist_form', class: 'btn btn-primary'%>
+        </div>
+    <% end %>
