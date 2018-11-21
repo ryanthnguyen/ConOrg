@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 class RegistrationFormController < ApplicationController
     def index
         @registration_forms = RegistrationForm.all
@@ -64,7 +64,4 @@ class RegistrationFormController < ApplicationController
         redirect_to user_url(@user), notice: 'registration_form destroyed'
     end
 end
-=======
-class RegistrationFormsController < ApplicationController
-end
->>>>>>> origin/RegFormModelController
+

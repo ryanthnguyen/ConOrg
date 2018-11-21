@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   put 'users/:id', to: 'users#update'
   delete 'users/:id', to: 'users#destroy'
   get 'users/:id/home', to: 'users#home', as: 'user_home'
-
+  get 'users/:user_id/panelist_forms/new', to: 'panelist_forms#new', as: 'new_panelist_form'
 
   get 'admins', to: 'admins#index', as: 'admins'
   get 'admin/new', to: 'admin#new', as: 'new_admin'
@@ -74,5 +74,12 @@ Rails.application.routes.draw do
   patch 'registration_forms/:id', to: 'registration_forms#update', as: 'registration_form'
   put 'registration_forms/:id', to: 'registration_forms#update'
   delete 'registration_forms/:id', to: 'registration_forms#destroy'
+
+  get 'panelist_form_forms', to: 'panelist_form_forms#index', as: 'panelist_form_forms_index'
+  post 'panelist_form_forms', to: 'panelist_form_forms#create', as: 'panelist_form_forms'
+  get 'panelist_form_forms/:id/edit', to: 'panelist_form_forms#edit', as: 'edit_panelist_form_form'
+  patch 'panelist_form_forms/:id', to: 'panelist_form_forms#update', as: 'panelist_form_form'
+  put 'panelist_form_forms/:id', to: 'panelist_form_forms#update'
+  delete 'panelist_form_forms/:id', to: 'panelist_form_forms#destroy'
 
 end
