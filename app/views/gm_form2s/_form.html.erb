@@ -1,0 +1,38 @@
+<%= form_with model: @gm_form2, local: true do |form| %>
+     <%= hidden_field_tag :gm_form2_id, gm_form2_id%>
+    <div class="field">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :last_name %>
+        <%= form.text_field :last_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :address %>
+        <%= form.text_field :address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :city %>
+        <%= form.text_field :city, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :state %>
+        <%= form.text_field :state, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :zip %>
+        <%= form.text_field :zip, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :age %>
+        <%= form.text_field :age, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :games %>
+        <%= form.text_field :games, class: 'form-control' %>
+    </div>
+        <div class="actions">
+        <%= form.submit 'Update gm_form2', class: 'btn btn-primary'%>
+        </div>
+    <% end %>

@@ -1,0 +1,42 @@
+<%= form_with model: @user, local: true do |form| %>
+     <%= hidden_field_tag :user_id, user_id%>
+    <div class="field">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :last_name %>
+        <%= form.text_field :last_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :address %>
+        <%= form.text_field :address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :city %>
+        <%= form.text_field :city, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :state %>
+        <%= form.text_field :state, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :zip %>
+        <%= form.text_field :zip, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :different_prices %>
+        <%= form.text_field :different_prices, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :payment_type %>
+        <%= form.text_field :payment_type, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :coupon_codes %>
+        <%= form.text_field :coupon_codes, class: 'form-control' %>
+    </div>
+        <div class="actions">
+        <%= form.submit 'Update user', class: 'btn btn-primary'%>
+        </div>
+    <% end %>
