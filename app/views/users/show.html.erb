@@ -1,10 +1,18 @@
 <main role="main" class="container">
+<p>
 
-    <h1>Edit User</h1>
+    <b>Name</b> <%= @user.first_name%> <%= @user.last_name%>
 
-    <%= render 'form', user: @user%>
+</p>
 
-    <h2>Convention Registration</h2>
+<p>
+
+    <b>Email</b> <%= @user.email_address%>
+
+</p>
+
+
+<h2>Convention Registration</h2>
     <table class="table table-sm">
         <thead>
             <tr>
@@ -24,7 +32,7 @@
         </tbody>
         </table>
         <p>
-        <%= link_to 'New Panelist Application', new_registration_form_path(@user) %> <br> 
+        <%= link_to 'New Registration Form', new_registration_form_path(@user) %> <br> 
         </p>
 
     <h2>Panelist Registration</h2>
@@ -79,14 +87,14 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Business Name</th>
+            <th scope="col">Name</th>
             <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             <% @user.gm_form1s.each do |gm_form1| %>
             <tr>
-                <td><%= gm_form1.business_name %></td>
+                <td><%= gm_form1.first_name %></td>
                 <td><%= link_to 'edit', edit_gm_form1_path(gm_form1) %>
                 <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
                 </td>
@@ -102,14 +110,14 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Business Name</th>
+            <th scope="col">Game</th>
             <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             <% @user.gm_form2s.each do |gm_form2| %>
             <tr>
-                <td><%= gm_form2.business_name %></td>
+                <td><%= gm_form2.games %></td>
                 <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
                 <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
                 </td>
@@ -120,8 +128,5 @@
         <p>
         <%= link_to 'New Game Application', new_gm_form2_path(@user) %> <br> 
         </p>
-
-<p>
-    <%= link_to 'Back', users_path %>
 </p>
 </main><!-- /.container -->

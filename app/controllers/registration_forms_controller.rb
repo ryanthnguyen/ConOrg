@@ -1,17 +1,17 @@
 
-class RegistrationFormController < ApplicationController
+class RegistrationFormsController < ApplicationController
     def index
         @registration_forms = RegistrationForm.all
     end
 
-    # def show
-    #     @registration_form = RegistrationForm.find(params[:id])
-    # end
+    def show
+         @registration_form = RegistrationForm.find(params[:id])
+    end
         
         
     def new
         begin
-            @user = RegistrationForm.find(params[:user_id])
+            @user = User.find(params[:user_id])
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
@@ -20,7 +20,7 @@ class RegistrationFormController < ApplicationController
 
     def create
         begin
-            @user = RegistrationForm.find(params[:user_id])
+            @user = User.find(params[:user_id])
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end

@@ -3,14 +3,14 @@ class DealerFormsController < ApplicationController
         @dealer_forms = DealerForm.all
     end
 
-    # def show
-    #     @dealer_form = DealerForm.find(params[:id])
-    # end
+     def show
+         @dealer_form = DealerForm.find(params[:user_id])
+     end
         
         
     def new
         begin
-            @user = DealerForm.find(params[:user_id])
+            @user = User.find(params[:user_id])
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
@@ -19,7 +19,7 @@ class DealerFormsController < ApplicationController
 
     def create
         begin
-            @user = DealerForm.find(params[:user_id])
+            @user = User.find(params[:user_id])
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end

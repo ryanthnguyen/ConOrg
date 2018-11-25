@@ -1,5 +1,5 @@
 <%= form_with model: @dealer_form, local: true do |form| %>
-     <%= hidden_field_tag :dealer_form_id, dealer_form_id%>
+     <%= hidden_field_tag :user_id, user_id%>
     <div class="field">
         <%= form.label :first_name %>
         <%= form.text_field :first_name, class: 'form-control' %>
@@ -25,7 +25,7 @@
         <%= form.text_field :type_of_merchandise_or_service, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :adress %>
+        <%= form.label :address %>
         <%= form.text_field :address, class: 'form-control' %>
     </div>
     <div class="field">
@@ -53,7 +53,7 @@
         <%= form.text_field :email_address, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :number_of_sapces %>
+        <%= form.label :number_of_spaces %>
         <%= form.text_field :number_of_spaces, class: 'form-control' %>
     </div>
     <div class="field">

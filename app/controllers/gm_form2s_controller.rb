@@ -3,14 +3,14 @@ class GmForm2sController < ApplicationController
         @gm_form2s = GmForm2.all
     end
 
-    # def show
-    #     @gm_form2 = GmForm2.find(params[:id])
-    # end
+     def show
+         @gm_form2 = GmForm2.find(params[:user_id])
+     end
         
         
     def new
         begin
-            @user = GmForm2.find(params[:user_id])
+            @user = User.find(params[:user_id])
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
@@ -19,7 +19,7 @@ class GmForm2sController < ApplicationController
 
     def create
         begin
-            @user = GmForm2.find(params[:user_id])
+            @user = User.find(params[:user_id])
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
