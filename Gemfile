@@ -66,3 +66,6 @@ gem 'jquery-rails'
 gem "validates_timeliness", "~> 4.0"
 
 gem "valid_url", "~> 0.0.4"
+gem 'annotate'
+gem 'clearance'
+

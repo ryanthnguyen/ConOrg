@@ -2,22 +2,6 @@
 #
 # Table name: users
 #
-<<<<<<< HEAD
-#  id              :integer          not null, primary key
-#  address         :string
-#  age             :integer
-#  city            :string
-#  email_address   :string
-#  first_name      :string
-#  last_name       :string
-#  membership_type :string
-#  phone           :integer
-#  state           :string
-#  zip             :integer
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
-#
-=======
 #  id                 :integer          not null, primary key
 #  address            :string
 #  age                :integer
@@ -41,9 +25,6 @@
 #  index_users_on_email           (email)
 #  index_users_on_remember_token  (remember_token)
 #
-
-require 'test_helper'
->>>>>>> 3123eac8fa1b961697018f56d34472fd70e9bd39
 
 require 'test_helper'
 

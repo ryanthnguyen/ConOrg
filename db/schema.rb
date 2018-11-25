@@ -11,8 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2018_11_25_103115) do
->>>>>>> 3123eac8fa1b961697018f56d34472fd70e9bd39
-
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -63,7 +61,6 @@ ActiveRecord::Schema.define(version: 2018_11_25_103115) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
-
   end
 
   create_table "gm_form2s", force: :cascade do |t|
