@@ -1,4 +1,4 @@
-<% provide(:title, 'Event Info')%>
+<% provide(:title, 'Scheduling')%>
 
     <main role="main" class="container">
 
@@ -6,12 +6,54 @@
 
         <h1>Midsouth Con Schedule</h1>
         
-        <p>
-        <%= link_to "Back", eventinfo_path%><br>
-        <%= link_to "Home", home_path %>
-        </p>
+        <h1>Panels</h1>
+
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Panelist</th>
+                <th scope="col">Time</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @panelist_forms.each do |panelist_form| %>
+              <tr>
+                  <td><%= panelist_form.title %></td>
+                  <td><%= panelist_form.pen_name %></td>
+                  <td><%= panelist_form.availability %></td>
+                  
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+          
               
-              
+          <br>
+
+          <h1>Games</h1>
+
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Game</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @gm_form2s.each do |gm_form2| %>
+                <tr>
+                    <td><%= gm_form2.games %></td>
+
+                    
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+            <p>
+            <%= link_to 'Back', eventinfo_path %> <br> 
+          </p>
         </div>
 
     </main><!-- /.container -->

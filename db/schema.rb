@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_13_231735) do
+ActiveRecord::Schema.define(version: 2018_11_25_103115) do
+>>>>>>> 3123eac8fa1b961697018f56d34472fd70e9bd39
 
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
@@ -46,6 +47,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.string "list_names_ages_of_extra_members"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "gm_form1s", force: :cascade do |t|
@@ -58,6 +61,9 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.integer "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
+
   end
 
   create_table "gm_form2s", force: :cascade do |t|
@@ -71,6 +77,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.string "games"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "panelist_forms", force: :cascade do |t|
@@ -100,6 +108,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.integer "amount_of_panels_at_convention"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "registration_forms", force: :cascade do |t|
@@ -114,6 +124,8 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.string "coupon_codes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "admin_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -129,6 +141,11 @@ ActiveRecord::Schema.define(version: 2018_11_13_231735) do
     t.integer "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email"
+    t.string "encrypted_password", limit: 128
+    t.string "confirmation_token", limit: 128
+    t.string "remember_token", limit: 128
+    t.index ["email"], name: "index_users_on_email"
+    t.index ["remember_token"], name: "index_users_on_remember_token"
   end
-
 end

@@ -6,6 +6,8 @@ class PagesController < ApplicationController
         #render eventinfo.html.erb
     end
     def schedule
+        @panelist_forms = PanelistForm.all
+        @gm_form2s = GmForm2.all
         #render schedule.html.erb
     end
     def userauth

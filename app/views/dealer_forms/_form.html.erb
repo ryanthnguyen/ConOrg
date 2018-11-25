@@ -1,0 +1,74 @@
+<%= form_with model: @dealer_form, local: true do |form| %>
+     <%= hidden_field_tag :user_id, user_id%>
+    <div class="field">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :last_name %>
+        <%= form.text_field :last_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :bagde_name %>
+        <%= form.text_field :badge_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :age %>
+        <%= form.text_field :age, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :business_name %>
+        <%= form.text_field :business_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :type_of_merchandise_or_service %>
+        <%= form.text_field :type_of_merchandise_or_service, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :address %>
+        <%= form.text_field :address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :city %>
+        <%= form.text_field :city, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :state %>
+        <%= form.text_field :state, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :zip %>
+        <%= form.text_field :zip, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :phone %>
+        <%= form.text_field :phone, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :company_website_address %>
+        <%= form.text_field :company_website_address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :email_address %>
+        <%= form.text_field :email_address, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :number_of_spaces %>
+        <%= form.text_field :number_of_spaces, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :display_require_AC_power %>
+        <%= form.text_field :display_require_AC_power, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :number_of_memberships %>
+        <%= form.text_field :number_of_memberships, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :list_names_ages_of_extra_members %>
+        <%= form.text_field :list_names_ages_of_extra_members, class: 'form-control' %>
+    </div>
+        <div class="actions">
+        <%= form.submit 'Update dealer_form', class: 'btn btn-primary'%>
+        </div>
+    <% end %>

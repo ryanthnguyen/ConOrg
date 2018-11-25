@@ -15,6 +15,11 @@
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #
+<<<<<<< HEAD
+=======
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+>>>>>>> 3123eac8fa1b961697018f56d34472fd70e9bd39
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
