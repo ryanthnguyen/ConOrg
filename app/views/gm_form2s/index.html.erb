@@ -15,20 +15,17 @@
   <tbody>
     <% @gm_form2s.each do |gm_form2| %>
     <tr>
-        <td><%= gm_form2.gm_id %></td>
+        <td><%= gm_form2.id %></td>
         <td><%= gm_form2.first_name %></td>
         <td><%= gm_form2.last_name %></td>
         <td><%= gm_form2.games %></td>
-        <td><%= link_to 'show', gm_form2_path(gm_form2)%>
-        <%= link_to 'edit', edit_gm_form2_path(gm_form2)%>
-        <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
-        </td>
+
         
     </tr>
     <% end %>
   </tbody>
 </table>
 <p>
-  <%= link_to 'New GM Games Form', new_gm_form2_path %> <br> 
+  <%= link_to 'Back', eventinfo_path %> <br> 
 </p>
 </main><!-- /.container -->

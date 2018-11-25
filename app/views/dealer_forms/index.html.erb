@@ -19,16 +19,12 @@
         <td><%= dealer_form.email_address %></td>
         <td><%= dealer_form.type_of_merchandise_or_service %></td>
         <td><%= dealer_form.company_website_address %></td>
-        <td><%= link_to 'show', dealer_form_path(dealer_form)%>
-        <%= link_to 'edit', edit_dealer_form_path(dealer_form)%>
-        <%= link_to 'destroy', dealer_form_path(dealer_form), method: :delete %>
-        </td>
         
     </tr>
     <% end %>
   </tbody>
 </table>
 <p>
-  <%= link_to 'New Dealer Form', new_dealer_form_path %> <br> 
+  <%= link_to 'Back', eventinfo_path %> <br> 
 </p>
 </main><!-- /.container -->

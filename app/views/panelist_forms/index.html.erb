@@ -19,16 +19,12 @@
         <td><%= panelist_form.title %></td>
         <td><%= panelist_form.email_address %></td>
         <td><%= panelist_form.availability %></td>
-        <td><%= link_to 'show', panelist_form_path(panelist_form)%>
-        <%= link_to 'edit', edit_panelist_form_path(panelist_form)%>
-        <%= link_to 'destroy', panelist_form_path(panelist_form), method: :delete %>
-        </td>
         
     </tr>
     <% end %>
   </tbody>
 </table>
 <p>
-  <%= link_to 'New Panelist Form', new_panelist_form_path %> <br> 
+  <%= link_to 'Back', eventinfo_path %> <br> 
 </p>
 </main><!-- /.container -->
