@@ -1,0 +1,30 @@
+<main role="main" class="container">
+
+<h1>Registration Forms</h1>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">GM ID</th>
+      <th scope="col">Game</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @registration_forms.each do |registration_form| %>
+    <tr>
+        <td><%= registration_form.gm_id %></td>
+        <td><%= registration_form.games %></td>
+        <td><%= link_to 'show', registration_form_path(registration_form)%>
+        <%= link_to 'edit', edit_registration_form_path(registration_form)%>
+        <%= link_to 'destroy', registration_form_path(registration_form), method: :delete %>
+        </td>
+        
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<p>
+  <%= link_to 'Registration Form', new_registration_form_path %> <br> 
+</p>
+</main><!-- /.container -->

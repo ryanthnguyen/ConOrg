@@ -1,0 +1,34 @@
+<main role="main" class="container">
+
+<h1>Game Forms</h1>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">GM ID</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Game</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @gm_form2s.each do |gm_form2| %>
+    <tr>
+        <td><%= gm_form2.gm_id %></td>
+        <td><%= gm_form2.first_name %></td>
+        <td><%= gm_form2.last_name %></td>
+        <td><%= gm_form2.games %></td>
+        <td><%= link_to 'show', gm_form2_path(gm_form2)%>
+        <%= link_to 'edit', edit_gm_form2_path(gm_form2)%>
+        <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
+        </td>
+        
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<p>
+  <%= link_to 'New GM Games Form', new_gm_form2_path %> <br> 
+</p>
+</main><!-- /.container -->

@@ -1,0 +1,127 @@
+<main role="main" class="container">
+
+    <h1>Edit User</h1>
+
+    <%= render 'form', user: @user%>
+
+    <h2>Convention Registration</h2>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+            <th scope="col">Payment Type</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @user.registration_forms.each do |registration_form| %>
+            <tr>
+                <td><%= registration_form.payment_time %></td>
+                <td><%= link_to 'edit', edit_registration_form_path(registration_form) %>
+                <%= link_to 'destroy', registration_form_path(registration_form), method: :delete %>
+                </td>
+            </tr>
+            <% end %>
+        </tbody>
+        </table>
+        <p>
+        <%= link_to 'New Panelist Application', new_registration_form_path(@user) %> <br> 
+        </p>
+
+    <h2>Panelist Registration</h2>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Time</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @user.panelist_forms.each do |panelist_form| %>
+            <tr>
+                <td><%= panelist_form.title %></td>
+                <td><%= panelist_form.availability %></td>
+                <td><%= link_to 'edit', edit_panelist_form_path(panelist_form) %>
+                <%= link_to 'destroy', panelist_form_path(panelist_form), method: :delete %>
+                </td>
+            </tr>
+            <% end %>
+        </tbody>
+        </table>
+        <p>
+        <%= link_to 'New Panelist Application', new_panelist_form_path(@user) %> <br> 
+        </p>
+
+        <h2>Dealer Registration</h2>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+            <th scope="col">Business Name</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @user.dealer_forms.each do |dealer_form| %>
+            <tr>
+                <td><%= dealer_form.business_name %></td>
+                <td><%= link_to 'edit', edit_dealer_form_path(dealer_form) %>
+                <%= link_to 'destroy', dealer_form_path(dealer_form), method: :delete %>
+                </td>
+            </tr>
+            <% end %>
+        </tbody>
+        </table>
+        <p>
+        <%= link_to 'New Dealer Application', new_dealer_form_path(@user) %> <br> 
+        </p>
+
+        <h2>GM Registration</h2>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+            <th scope="col">Business Name</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @user.gm_form1s.each do |gm_form1| %>
+            <tr>
+                <td><%= gm_form1.business_name %></td>
+                <td><%= link_to 'edit', edit_gm_form1_path(gm_form1) %>
+                <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
+                </td>
+            </tr>
+            <% end %>
+        </tbody>
+        </table>
+        <p>
+        <%= link_to 'New GM Application', new_gm_form1_path(@user) %> <br> 
+        </p>
+
+        <h2>GM Games Registration</h2>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+            <th scope="col">Business Name</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @user.gm_form2s.each do |gm_form2| %>
+            <tr>
+                <td><%= gm_form2.business_name %></td>
+                <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
+                <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
+                </td>
+            </tr>
+            <% end %>
+        </tbody>
+        </table>
+        <p>
+        <%= link_to 'New Game Application', new_gm_form2_path(@user) %> <br> 
+        </p>
+
+<p>
+    <%= link_to 'Back', users_path %>
+</p>
+</main><!-- /.container -->
