@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2018_11_25_103115) do
-
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -146,5 +145,4 @@ ActiveRecord::Schema.define(version: 2018_11_25_103115) do
     t.index ["email"], name: "index_users_on_email"
     t.index ["remember_token"], name: "index_users_on_remember_token"
   end
-
 end

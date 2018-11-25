@@ -12,6 +12,7 @@
 #  zip        :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+
 #  admin_id   :integer
 #  user_id    :integer
 #
