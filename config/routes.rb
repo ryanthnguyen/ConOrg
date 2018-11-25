@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get 'profilepage', to: 'pages#profilepage', as: 'profilepage'
   get 'dealerinfo', to: 'pages#dealerinfo', as: 'dealerinfo'
   get 'applications', to: 'pages#applications', as: 'applications'
+
+  get 'admin',to: 'pages#admin', as: 'admin'
 end
