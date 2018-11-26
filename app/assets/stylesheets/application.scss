@@ -13,12 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
  @import "bootstrap";
 
  body {
      padding-top: 5rem;
      padding-left: 1.5rem;
      padding-right: 1.5rem;
+     background-color: #14171E;
    }
  
  div.field{
@@ -40,3 +42,12 @@
  div.invalid-feedback{
    display: block;
  }
+
+ .conbanner{
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style-type: none;
+}

@@ -40,7 +40,7 @@
         <thead>
             <tr>
             <th scope="col">Title</th>
-            <th scope="col">Time</th>
+            
             <th scope="col"></th>
             </tr>
         </thead>
@@ -48,7 +48,7 @@
             <% @user.panelist_forms.each do |panelist_form| %>
             <tr>
                 <td><%= panelist_form.title %></td>
-                <td><%= panelist_form.availability %></td>
+                
                 <td><%= link_to 'edit', edit_panelist_form_path(panelist_form) %>
                 <%= link_to 'destroy', panelist_form_path(panelist_form), method: :delete %>
                 </td>
