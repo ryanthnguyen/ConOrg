@@ -49,7 +49,7 @@
 ### Task 2: Create validations for the models
 
 - Description: Create validations for each model in order to prevent incorrect input.
-- How to Evaluate: Check by entering in correct inputs and incorrect inputs.
+- How to Evaluate: Check the validations in the source code
 - Outcome of Task: xxx
 
 ### Task 3: Implement database for the models

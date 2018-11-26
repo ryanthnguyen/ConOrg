@@ -16,7 +16,6 @@
 #  admin_id   :integer
 #  user_id    :integer
 #
-
 require 'test_helper'
 
 class GmForm2Test < ActiveSupport::TestCase
