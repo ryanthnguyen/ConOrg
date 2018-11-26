@@ -26,13 +26,31 @@
 - How to Evaluate: The User page should have the ability to create a user, edit a users information, show the user information, or delete a user.
 - Outcome of Task: The user page will be set up in a bare bones state to allow for user modifications and additions.
 
-### Task 3: Page creation
+### Task 3: Panelist Form Model Controller
+
+- Description: Generate the panelist form model controller, as well as write create, update, and destroy functions. Also create the associated html page plus controller code.
+- How to Evaluate: The User page should have the ability to create a panelist form, edit the information, show the information, or delete it.
+- Outcome of Task: The user page will be set up in a bare bones state to allow for panel form modifications and additions.
+
+### Task 4: Dealer Form Model Controller
+
+- Description: Generate dealer form model controller, as well as write create, update, and destroy functions. Also create the associated html page plus controller code.
+- How to Evaluate: The User page should have the ability to create a dealer from, edit the information, show the user information, or delete it.
+- Outcome of Task: The user page will be set up in a bare bones state to allow for dealer form modifications and additions.
+
+### Task 5: Gm Form 1 2 Model Controller
+
+- Description: Generate the GmForm1 and GmForm2 model controllers, as well as write create, update, and destroy functions. Also create the associated html page plus controller code.
+- How to Evaluate: The User page should have the ability to create both game master forms, edit the information, or delete them.
+- Outcome of Task: The user page will be set up in a bare bones state to allow for user modifications and additions.
+
+### Task 6: Page creation
 
 - Description: Pages will be created following the template layed out by the sitemap
 - How to Evaluate: Pages should match the sitemap
 - Outcome of Task: xxx (Description; filled in at end of iteration)
 
-### Task 4: Update Routes
+### Task 7: Update Routes
 
 - Description: Routes will be updated such that links on pages will take the user to the proper locations, each page can go to home, except for home itself, and each page should be able to return to the previous page, again except for home. Routes will also be modified to allow for form submission, editing, and login
 - How to Evaluate: The routes file is properly written such that links operate as described
