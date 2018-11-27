@@ -11,7 +11,7 @@
 - Who-Did-What Document for Demo Video: xxx (File location)
 - Up-to-Date Requirements and Design Artifacts:
   - User stories: comp4081-ConOrg/docs/UserStories.md
-  - Sitemap: comp4081-ConOrg/docs/Sitemap V1.jpg
+  - Sitemap: comp4081-ConOrg/docs/Sitemap V2.jpg
   - User interface designs: comp4081-ConOrg/docs/LandingPageUI.jpg
   - Class diagram of your model: comp4081-ConOrg/docs/ConOrg UML Diagram.png
 
