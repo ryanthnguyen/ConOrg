@@ -84,11 +84,11 @@ Rails.application.routes.draw do
   put 'registration_forms/:id', to: 'registration_forms#update'
   delete 'registration_forms/:id', to: 'registration_forms#destroy'
 
-  get 'panelist_form_forms', to: 'panelist_form_forms#index', as: 'panelist_form_forms_index'
-  post 'panelist_form_forms', to: 'panelist_form_forms#create', as: 'panelist_form_forms'
-  get 'panelist_form_forms/:id/edit', to: 'panelist_form_forms#edit', as: 'edit_panelist_form_form'
-  patch 'panelist_form_forms/:id', to: 'panelist_form_forms#update', as: 'panelist_form_form'
-  put 'panelist_form_forms/:id', to: 'panelist_form_forms#update'
-  delete 'panelist_form_forms/:id', to: 'panelist_form_forms#destroy'
+  get 'panelist_forms', to: 'panelist_forms#index', as: 'panelist_forms_index'
+  post 'panelist_forms', to: 'panelist_forms#create', as: 'panelist_forms'
+  get 'panelist_forms/:id/edit', to: 'panelist_forms#edit', as: 'edit_panelist_form'
+  patch 'panelist_forms/:id', to: 'panelist_forms#update', as: 'panelist_form'
+  put 'panelist_forms/:id', to: 'panelist_forms#update'
+  delete 'panelist_forms/:id', to: 'panelist_forms#destroy'
 
 end
