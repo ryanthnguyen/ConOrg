@@ -1,0 +1,16 @@
+whjones - Model associations, forms, CRUD, Sitemapping
+rmtilley - wireframe for homepage
+jrrhades - added login, started admin page
+qtquoc - created models, databases, and validations
+
+Workflow: 
+	views rmtilley/whjones/jrrhades
+	models qtquoc
+	CRUD pages whjones
+	DB schemas qtquoc
+	Wireframe Docs for homepage rmtilley
+	Initial sign up first. Then bring up new sign in whjones/jrrhades
+	Explore /admin page
+	show signup form 
+
+https://www.youtube.com/watch?v=7ubHRmzbOX4
