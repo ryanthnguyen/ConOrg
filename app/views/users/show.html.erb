@@ -16,7 +16,9 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Payment Type</th>
+            <th scope="col">Payment Type </th>
+            <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col"></th>
             </tr>
         </thead>
@@ -24,6 +26,8 @@
             <% @user.registration_forms.each do |registration_form| %>
             <tr>
                 <td><%= registration_form.payment_type %></td>
+                <td></td>
+                <td></td>
                 <td><%= link_to 'edit', edit_registration_form_path(registration_form) %>
                 <%= link_to 'destroy', registration_form_path(registration_form), method: :delete %>
                 </td>
@@ -39,8 +43,9 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Title</th>
-            
+            <th scope="col">Title        </th>
+            <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col"></th>
             </tr>
         </thead>
@@ -48,7 +53,8 @@
             <% @user.panelist_forms.each do |panelist_form| %>
             <tr>
                 <td><%= panelist_form.title %></td>
-                
+                <td></td>
+                <td></td>
                 <td><%= link_to 'edit', edit_panelist_form_path(panelist_form) %>
                 <%= link_to 'destroy', panelist_form_path(panelist_form), method: :delete %>
                 </td>
@@ -66,12 +72,16 @@
             <tr>
             <th scope="col">Business Name</th>
             <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             <% @user.dealer_forms.each do |dealer_form| %>
             <tr>
                 <td><%= dealer_form.business_name %></td>
+                <td></td>
+                <td></td>
                 <td><%= link_to 'edit', edit_dealer_form_path(dealer_form) %>
                 <%= link_to 'destroy', dealer_form_path(dealer_form), method: :delete %>
                 </td>
@@ -87,7 +97,9 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Name</th>
+            <th scope="col">Name         </th>
+            <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col"></th>
             </tr>
         </thead>
@@ -95,6 +107,8 @@
             <% @user.gm_form1s.each do |gm_form1| %>
             <tr>
                 <td><%= gm_form1.first_name %></td>
+                <td></td>
+                <td></td>
                 <td><%= link_to 'edit', edit_gm_form1_path(gm_form1) %>
                 <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
                 </td>
@@ -110,7 +124,9 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Game</th>
+            <th scope="col">Game        </th>
+            <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col"></th>
             </tr>
         </thead>
@@ -118,6 +134,8 @@
             <% @user.gm_form2s.each do |gm_form2| %>
             <tr>
                 <td><%= gm_form2.games %></td>
+                <td></td>
+                <td></td>
                 <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
                 <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
                 </td>
