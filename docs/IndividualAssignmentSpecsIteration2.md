@@ -48,9 +48,21 @@
 
 ### Task 1: 
 
-- Description:
-- How to Evaluate:
-- Outcome of Task:
+- Description: Update the models, databases, and validations
+- How to Evaluate: check the source code
+- Outcome of Task: xxx
+
+### Task 2: 
+
+- Description: Create unit testings for the models 
+- How to Evaluate: check the unit tests in the test folder
+- Outcome of Task: xxx
+
+### Task 3: 
+
+- Description: Create general form and link it to all the form pages 
+- How to Evaluate: Able to create specific forms in each form page
+- Outcome of Task: xxx
 
 ## Tasks: Josh Rhoades
 
