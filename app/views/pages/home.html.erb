@@ -125,9 +125,6 @@
               <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
                 <li class="nav-item"><%= link_to "Profile Page", user_path(current_user.id) %></li>
                 <li class="nav-item"><%= link_to "User Index", users_path%></li>
-                <%if current_user.admin == true%>
-                <li class="nav-item"><%= link_to "Dealer Forms", dealer_forms_path%></li>
-                <%end%>
                 <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
               </ul>
             </div>        

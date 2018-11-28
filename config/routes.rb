@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   get 'users/:user_id/gm_form1s/new', to: 'gm_form1s#new', as: 'new_gm_form1'
   get 'users/:user_id/gm_form2s/new', to: 'gm_form2s#new', as: 'new_gm_form2'
   get 'users/:user_id/panelist_forms/new', to: 'panelist_forms#new', as: 'new_panelist_form'
-  get 'users/:current', to: 'users#show', as: 'user'
+  get 'users/:user_id', to: 'users#show', as: 'user'
   patch 'users/:id', to: 'users#update'
   put 'users/:id', to: 'users#update'
   delete 'users/:id', to: 'users#destroy'
@@ -71,9 +71,10 @@ Rails.application.routes.draw do
   get 'dealer_forms', to: 'dealer_forms#index', as: 'dealer_forms_index'
   post 'dealer_forms', to: 'dealer_forms#create', as: 'dealer_forms'
   get 'dealer_forms/:id/edit', to: 'dealer_forms#edit', as: 'edit_dealer_form'
-  patch 'dealer_forms/:id', to: 'dealer_forms#update', as: 'dealer_form'
+  patch 'dealer_forms/:id', to: 'dealer_forms#update'
   put 'dealer_forms/:id', to: 'dealer_forms#update'
   delete 'dealer_forms/:id', to: 'dealer_forms#destroy'
+  get 'dealer_forms/:dealer_form_id', to: 'dealer_forms#show', as: 'dealer_form'
 
 
 

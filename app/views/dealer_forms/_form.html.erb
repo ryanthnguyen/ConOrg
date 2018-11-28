@@ -68,6 +68,12 @@
         <%= form.label :list_names_ages_of_extra_members %>
         <%= form.text_field :list_names_ages_of_extra_members, class: 'form-control' %>
     </div>
+    <%if current_user.admin == true%>
+    <div class="field">
+        <%= form.label :approved %>
+        <%= form.text_field :approved, class: 'form-control' %>
+    </div>
+    <%end%>
         <div class="actions">
         <%= form.submit 'Update dealer_form', class: 'btn btn-primary'%>
         </div>
