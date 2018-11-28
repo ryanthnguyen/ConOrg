@@ -7,8 +7,12 @@
 
 <p>
 
-    <b>Email</b> <%= @user.email_address%>
+    <b>Email</b> <%= @user.email%>
+    
+</p>
 
+<p>
+<%= link_to "Edit Profile", edit_user_path(current_user.id) %>
 </p>
 
 

@@ -86,7 +86,7 @@
         <tbody>
             <% @user.gm_form1s.each do |gm_form1| %>
             <tr>
-                <td><%= gm_form1.business_name %></td>
+                <td><%= gm_form1.id %></td>
                 <td><%= link_to 'edit', edit_gm_form1_path(gm_form1) %>
                 <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
                 </td>
@@ -109,7 +109,7 @@
         <tbody>
             <% @user.gm_form2s.each do |gm_form2| %>
             <tr>
-                <td><%= gm_form2.business_name %></td>
+                <td><%= gm_form2.games %></td>
                 <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
                 <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
                 </td>

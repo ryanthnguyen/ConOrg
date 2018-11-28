@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root to: 'pages#home'
@@ -28,7 +29,7 @@ Rails.application.routes.draw do
   get 'users/:user_id/gm_form1s/new', to: 'gm_form1s#new', as: 'new_gm_form1'
   get 'users/:user_id/gm_form2s/new', to: 'gm_form2s#new', as: 'new_gm_form2'
   get 'users/:user_id/panelist_forms/new', to: 'panelist_forms#new', as: 'new_panelist_form'
-  get 'users/:id', to: 'users#show', as: 'user'
+  get 'users/:current', to: 'users#show', as: 'user'
   patch 'users/:id', to: 'users#update'
   put 'users/:id', to: 'users#update'
   delete 'users/:id', to: 'users#destroy'

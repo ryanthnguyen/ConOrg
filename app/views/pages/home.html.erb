@@ -1,6 +1,7 @@
 <% provide(:title, 'Home')%>
     
     <main role="main">
+      <% if user_signed_in? %>
       
       <div>
         <div class="container-fluid d-flex flex-row justify-content-center flex-fill conbanner">
@@ -122,10 +123,139 @@
               </div>
 
               <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
-                <li class="nav-item"><%= link_to "Login or Signup", userauth_path %></li>
-                <li class="nav-item"><%= link_to "Profile Page", profilepage_path %></li>
+                <li class="nav-item"><%= link_to "Profile Page", user_path(current_user.id) %></li>
+                <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
               </ul>
             </div>        
           </div>
       </div>
+      <%else%>
+      <div>
+        <div class="container-fluid d-flex flex-row justify-content-center flex-fill conbanner">
+          <%= image_tag("MSC27TempBannerRed.jpg", alt: "MidSouthCon 37, March 15-17, 2019, Memphis, TN") %>
+        </div>
+
+        <div class="container text-light">
+          <div class="row">
+            <div class="col d-flex">
+              <div class="col-1">
+                <ul class="left-nav nav nav-fill flex-column align-self-start">
+                  <li class="nav-item"><%= link_to "Information", eventinfo_path %></li>
+                  <li class="nav-item"><%= link_to "Schedule", schedule_path%></li>
+                  <li class="nav-item">Guests</li>
+                  <li class="nav-item"><%= link_to "Panelists", panelist_forms_path%></li>
+                  <li class="nav-item"><%= link_to "Gaming", gm_form2s_path%></li>
+                  <li class="nav-item"><%= link_to "Dealers", dealer_forms_path%></li>
+                  <li class="nav-item">Registration</li>
+                </ul>
+              </div>
+
+              <div class="col">
+
+                <div class="row">
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <h3>Timothy Zahn - Author Guest of Honor</h3>
+                      </div>
+                      <div class="col">
+                        <%= image_tag("Zahn-Pub-Photo-Color-240x300.jpg", alt: "Timothy Zahn - Author Guest of Honor") %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <%= image_tag("sam_head240X300.jpg", alt: "Sam Flegal - Artist Guest of Honor") %>
+                      </div>
+                      <div class="col">
+                       <h3>Sam Flegal - Artist Guest of Honor</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <h3>Tom Nguyen - Comics Guest of Honor</h3>
+                      </div>
+                      <div class="col">
+                        <%= image_tag("Tom-Nguyen-240x300.jpg", alt: "Tom Nguyen - Comics Guest of Honor") %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <%= image_tag("JJMHeadNew.jpg", alt: "John Jackson Miller - Toastmaster") %>
+                      </div>
+                      <div class="col">
+                        <h3>John Jackson Miller - Toastmaster</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <h3>Jim Beall - Science Guest of Honor</h3>
+                      </div>
+                      <div class="col">
+                        <%= image_tag("Jim-Beall-2018-photo240x300.jpg", alt: "Jim Beall - Science Guest of Honor") %>
+                      </div>
+                    </div>
+                  </div>
+                          
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <%= image_tag("Batman-50-Jim-Lee-Cover-240x300.jpg", alt: "Michael & Margie Vizcarra Cox - Costuming Guests of Honor") %>
+                      </div>
+                      <div class="col">
+                        <h3>Michael & Margie Vizcarra Cox - Costuming Guests of Honor</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col guest-of-honor">
+                    <div class="row">
+                      <div class="col">
+                        <h3>Gordon Van Gelder - Editor Guest of Honor</h3>
+                      </div>
+                      <div class="col">
+                        <%= image_tag("van-gelder-gordon-april-2017-pic-by-Leslie-Howle240x300.jpg", alt: "Gordon Van Gelder - Editor Guest of Honor - Photo credit: Leslie Howle") %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-6 guest-of-honor">
+                    <div class="row">
+                      <div class="col-8 col-sm-6">
+                        <%= image_tag("jolly-r-blackburn.jpg", alt: "Jolly Blackburn - Gaming Guest of Honor") %>
+                      </div>
+                      <div class="col">
+                        <h3>Jolly Blackburn - Gaming Guest of Honor</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
+                <li class="nav-item"><%= link_to "Signup", new_user_registration_path %></li>
+                <li class="nav-item"><%= link_to "Login", new_user_session_path %></li>
+                
+              </ul>
+            </div>        
+          </div>
+      </div>
+      <%end%>
     </main><!-- /.container -->
