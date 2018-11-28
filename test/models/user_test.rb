@@ -4,6 +4,7 @@
 #
 #  id                     :integer          not null, primary key
 #  address                :string
+#  admin                  :boolean
 #  age                    :integer
 #  city                   :string
 #  email                  :string           default(""), not null
