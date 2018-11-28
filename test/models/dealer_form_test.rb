@@ -5,6 +5,7 @@
 #  id                               :integer          not null, primary key
 #  address                          :string
 #  age                              :integer
+#  approved                         :boolean
 #  badge_name                       :string
 #  business_name                    :string
 #  city                             :string
