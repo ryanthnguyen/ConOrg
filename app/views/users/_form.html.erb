@@ -36,6 +36,12 @@
         <%= form.label :phone %>
         <%= form.text_field :phone, class: 'form-control' %>
     </div>
+    <% if current_user.admin == true%>
+    <div class="field">
+        <%= form.label :admin %>
+        <%= form.text_field :admin, class: 'form-control' %>
+    </div>
+    <%end%>
         <div class="actions">
         <%= form.submit 'Update user', class: 'btn btn-primary'%>
         </div>
