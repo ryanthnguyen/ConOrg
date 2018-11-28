@@ -46,19 +46,19 @@
 
 ## Tasks: Ryan Nguyen
 
-### Task 1: 
+### Task 1: Model Updates
 
 - Description: Update the models, databases, and validations
 - How to Evaluate: check the source code
 - Outcome of Task: xxx
 
-### Task 2: 
+### Task 2: Unit Testing
 
 - Description: Create unit testings for the models 
 - How to Evaluate: check the unit tests in the test folder
 - Outcome of Task: xxx
 
-### Task 3: 
+### Task 3: Forms
 
 - Description: Create general form and link it to all the form pages 
 - How to Evaluate: Able to create specific forms in each form page
