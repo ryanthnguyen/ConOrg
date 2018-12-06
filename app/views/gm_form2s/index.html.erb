@@ -16,8 +16,8 @@
     <% @gm_form2s.each do |gm_form2| %>
     <tr>
         <td><%= gm_form2.id %></td>
-        <td><%= gm_form2.first_name %></td>
-        <td><%= gm_form2.last_name %></td>
+        <td><%= gm_form2.user.first_name %></td>
+        <td><%= gm_form2.user.last_name %></td>
         <td><%= gm_form2.games %></td>
 
         
