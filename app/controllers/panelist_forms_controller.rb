@@ -44,7 +44,7 @@ class PanelistFormsController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: panelist_form not found'
         end
-        if @panelist_form.update(params.require(:panelist_form).permit(:title, :first_name, :last_name, :address, :city, :state, :zip, :age, :pen_name, :badge_name, :phone, :email_address, :website, :availability, :primary_professional_focus, :secondary_professional_focus, :panelist_before, :time_in_pro_row, :amount_of_pro_row, :place_art_in_art_room, :recent_credits, :short_biography, :panel_suggestions, :amount_of_panels_at_convention))
+        if @panelist_form.update(params.require(:panelist_form).permit(:title, :first_name, :last_name, :address, :city, :state, :zip, :age, :pen_name, :badge_name, :phone, :email_address, :website, :availability, :primary_professional_focus, :secondary_professional_focus, :panelist_before, :time_in_pro_row, :amount_of_pro_row, :place_art_in_art_room, :recent_credits, :short_biography, :panel_suggestions, :amount_of_panels_at_convention, :approved))
             redirect_to user_url(@panelist_form.user), notice: 'panelist_form successfully updated'
         else
             flash.now[:alert] = 'Error! unable to update'

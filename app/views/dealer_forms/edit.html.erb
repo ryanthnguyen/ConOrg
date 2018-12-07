@@ -2,10 +2,20 @@
 
     <h1>Edit Dealer Form</h1>
 
-
+<%if current_user.admin == true%>
     <%= render 'form', user_id: @dealer_form.user.id, dealer_form: @dealer_form%>
 
 <p>
-    <%= link_to 'Back', users_path %>
+    <%= link_to 'Back', dealer_forms_path %>
+    <%= link_to 'Home', home_path%>
 </p>
+
+    <%else%>
+    <%= render 'form', user_id: @dealer_form.user.id, dealer_form: @dealer_form%>
+
+<p>
+
+    <%= link_to 'Home', home_path%>
+</p>
+    <%end%>
 </main><!-- /.container -->

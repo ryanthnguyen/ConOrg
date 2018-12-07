@@ -1,6 +1,29 @@
 <main role="main" class="container">
 <%if current_user.admin == true%>
 
+<p>
+
+    <b>Name</b> <%= @user.first_name%> <%= @user.last_name%>
+
+</p>
+
+<p>
+
+    <b>Email</b> <%= @user.email%>
+    
+</p>
+
+<p>
+<%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+</p>
+
+<ul>
+<li class="nav-item"><%= link_to "Panelists", panelist_forms_path%></li>
+<li class="nav-item"><%= link_to "Game Masters", gm_form1s_path%></li>
+<li class="nav-item"><%= link_to "Gaming", gm_form2s_path%></li>
+<li class="nav-item"><%= link_to "Dealers", dealer_forms_path%></li>
+</ul>
+
 <%else%>
 <p>
 
@@ -160,4 +183,5 @@
         <%end%>
 </p>
 <%end%>
+<%= link_to 'Home', home_path%>
 </main><!-- /.container -->

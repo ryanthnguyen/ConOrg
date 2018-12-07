@@ -40,13 +40,13 @@ class UsersController < ApplicationController
     end
 
     def edit
-        @user = current_user
+        @user = User.find(params[:id])
         
     end
         
     def update
-        @user = current_user
-        if @user.update(params.require(:user).permit(:address, :age, :city, :email, :encrypted_password, :first_name, :last_name, :phone, :state, :zip))
+        @user = User.find(params[:id])
+        if @user.update(params.require(:user).permit(:address, :age, :city, :email, :encrypted_password, :first_name, :last_name, :phone, :state, :zip, :admin))
             redirect_to user_url(@user), notice: 'User successfully updated'
         else
             flash.now[:alert] = 'Error! unable to update'

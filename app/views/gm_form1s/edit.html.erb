@@ -2,10 +2,20 @@
 
     <h1>Edit GM Form 1</h1>
 
-
+<%if current_user.admin == true%>
     <%= render 'form', user_id: @gm_form1.user.id, gm_form1: @gm_form1%>
 
 <p>
-    <%= link_to 'Back', user_path %>
+    <%= link_to 'Back', gm_form1s_path %>
+    <%= link_to 'Home', home_path%>
 </p>
+
+    <%else%>
+    <%= render 'form', user_id: @gm_form1.user.id, gm_form1: @gm_form1%>
+
+<p>
+
+    <%= link_to 'Home', home_path%>
+</p>
+    <%end%>
 </main><!-- /.container -->

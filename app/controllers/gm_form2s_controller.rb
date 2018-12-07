@@ -44,7 +44,7 @@ class GmForm2sController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: gm_form2 not found'
         end
-        if @gm_form2.update(params.require(:gm_form2).permit(:first_name, :last_name, :address, :city, :state, :zip, :age, :games))
+        if @gm_form2.update(params.require(:gm_form2).permit(:first_name, :last_name, :address, :city, :state, :zip, :age, :games, :approved))
             redirect_to user_url(@gm_form2.user), notice: 'gm_form2 successfully updated'
         else
             flash.now[:alert] = 'Error! unable to update'
