@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_28_120920) do
+ActiveRecord::Schema.define(version: 2018_12_06_233737) do
 
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 2018_11_28_120920) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
+    t.boolean "approved"
   end
 
   create_table "gm_form2s", force: :cascade do |t|
@@ -78,6 +79,7 @@ ActiveRecord::Schema.define(version: 2018_11_28_120920) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
+    t.boolean "approved"
   end
 
   create_table "panelist_forms", force: :cascade do |t|
@@ -109,6 +111,7 @@ ActiveRecord::Schema.define(version: 2018_11_28_120920) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
+    t.boolean "approved"
   end
 
   create_table "registration_forms", force: :cascade do |t|
@@ -125,6 +128,7 @@ ActiveRecord::Schema.define(version: 2018_11_28_120920) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
+    t.boolean "approved"
   end
 
   create_table "users", force: :cascade do |t|

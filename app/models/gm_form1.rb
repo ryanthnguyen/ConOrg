@@ -5,6 +5,7 @@
 #  id         :integer          not null, primary key
 #  address    :string
 #  age        :integer
+#  approved   :boolean
 #  city       :string
 #  first_name :string
 #  last_name  :string
@@ -14,6 +15,7 @@
 #  updated_at :datetime         not null
 #  admin_id   :integer
 #  user_id    :integer
+#
 
 class GmForm1 < ApplicationRecord
   belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form1s

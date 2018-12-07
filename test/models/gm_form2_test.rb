@@ -5,6 +5,7 @@
 #  id         :integer          not null, primary key
 #  address    :string
 #  age        :integer
+#  approved   :boolean
 #  city       :string
 #  first_name :string
 #  games      :string

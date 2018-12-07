@@ -96,6 +96,11 @@
         <%= form.label :amount_of_panels_at_convention %>
         <%= form.text_field :amount_of_panels_at_convention, class: 'form-control' %>
     </div>
+    <%if current_user.admin == true%>
+    <div class="field">
+        <%= form.label :approved %>
+        <%= form.text_field :approved, class: 'form-control' %>
+    </div>
         <div class="actions">
         <%= form.submit 'Update panelist_form', class: 'btn btn-primary'%>
         </div>
