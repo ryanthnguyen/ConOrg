@@ -2,75 +2,75 @@
 
 <h1>Dealers</h1>
 <%if current_user.admin == true%>
-<table class="table table-sm">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Badge Name</th>
-      <th scope="col">Business</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Merch/Service</th>
-      <th scope="col">Website</th>
-      <th scope="col">AC Needed</th>
-      <th scope="col">Total Members</th>
-      <th scope="col">Other Members</th>
-      <th scope="col">Spaces Needed</th>
-      <th scope="col">Approved</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @dealer_forms.each do |dealer_form| %>
-    <tr>
-        <td><%= dealer_form.user.first_name %> <%= dealer_form.user.last_name %></td>
-        
-        <td><%= dealer_form.badge_name %></td>
-        <td><%= dealer_form.business_name %></td>
-        <td><%= dealer_form.user.email %></td>
-        <td><%= dealer_form.user.phone %></td>
-        <td><%= dealer_form.type_of_merchandise_or_service %></td>
-        <td><%= dealer_form.company_website_address %></td>
-        <td><%= dealer_form.display_require_AC_power %></td>
-        <td><%= dealer_form.number_of_memberships %></td>
-        <td><%= dealer_form.list_names_ages_of_extra_members %></td>
-        <td><%= dealer_form.number_of_spaces %></td>
-        <%if dealer_form.approved == true%>
-        <td>Approved</td>
-        <%else%>
-        <td>Not Approved</td>
-        <%end%>
-        <td><%= link_to "Edit", edit_dealer_form_path(dealer_form)%>
-        <%= link_to 'destroy', dealer_form_path(dealer_form), method: :delete %></td>
-        
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Badge Name</th>
+        <th scope="col">Business</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Merch/Service</th>
+        <th scope="col">Website</th>
+        <th scope="col">AC Needed</th>
+        <th scope="col">Total Members</th>
+        <th scope="col">Other Members</th>
+        <th scope="col">Spaces Needed</th>
+        <th scope="col">Approved</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @dealer_forms.each do |dealer_form| %>
+        <tr>
+            <td><%= dealer_form.user.first_name %> <%= dealer_form.user.last_name %></td>
+            
+            <td><%= dealer_form.badge_name %></td>
+            <td><%= dealer_form.business_name %></td>
+            <td><%= dealer_form.user.email %></td>
+            <td><%= dealer_form.user.phone %></td>
+            <td><%= dealer_form.type_of_merchandise_or_service %></td>
+            <td><%= dealer_form.company_website_address %></td>
+            <td><%= dealer_form.display_require_AC_power %></td>
+            <td><%= dealer_form.number_of_memberships %></td>
+            <td><%= dealer_form.list_names_ages_of_extra_members %></td>
+            <td><%= dealer_form.number_of_spaces %></td>
+            <%if dealer_form.approved == true%>
+            <td>Approved</td>
+            <%else%>
+            <td>Not Approved</td>
+            <%end%>
+            <td><%= link_to "Edit", edit_dealer_form_path(dealer_form)%>
+            <%= link_to 'destroy', dealer_form_path(dealer_form), method: :delete %></td>
+            
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 <%else%>
-<table class="table table-sm">
-  <thead>
-    <tr>
-      <th scope="col">Business</th>
-      <th scope="col">Email</th>
-      <th scope="col">Merch/Service</th>
-      <th scope="col">Website</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @dealer_forms.each do |dealer_form| %>
-    <%if dealer_form.approved == true%>
-    <tr>
-        <td><%= dealer_form.business_name %></td>
-        <td><%= dealer_form.email_address %></td>
-        <td><%= dealer_form.type_of_merchandise_or_service %></td>
-        <td><%= dealer_form.company_website_address %></td>
-        
-    </tr>
-    <%end%>
-    <% end %>
-  </tbody>
-</table>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Business</th>
+        <th scope="col">Email</th>
+        <th scope="col">Merch/Service</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @dealer_forms.each do |dealer_form| %>
+        <%if dealer_form.approved == true%>
+          <tr>
+              <td><%= dealer_form.business_name %></td>
+              <td><%= dealer_form.email_address %></td>
+              <td><%= dealer_form.type_of_merchandise_or_service %></td>
+              <td><%= dealer_form.company_website_address %></td>
+              
+          </tr>
+        <%end%>
+      <% end %>
+    </tbody>
+  </table>
 <%end%>
 <p>
   <%= link_to 'Home', home_path %> <br> 
