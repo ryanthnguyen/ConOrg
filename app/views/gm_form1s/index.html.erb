@@ -1,30 +1,61 @@
 <main role="main" class="container">
 
 <h1>GM Forms</h1>
-
-<table class="table table-sm">
-  <thead>
-    <tr>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Age</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @gm_form1s.each do |gm_form1| %>
-    <tr>
-        <td><%= gm_form1.first_name %></td>
-        <td><%= gm_form1.last_name %></td>
-        <td><%= gm_form1.age %></td>
-        <td><%= link_to 'edit', edit_gm_form1_path(gm_form1)%>
-        <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
-        </td>
-        
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+<%if current_user.admin == true%>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Approved</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @gm_form1s.each do |gm_form1| %>
+        <tr>
+          <td><%= gm_form1.user.first_name %></td>
+          <td><%= gm_form1.user.last_name %></td>
+          <td><%= gm_form1.user.age %></td>
+          <%if gm_form1.approved == true%>
+            <td>Approved</td>
+            <%else%>
+            <td>Not Approved</td>
+            <%end%>
+          <td><%= link_to 'edit', edit_gm_form1_path(gm_form1)%>
+          <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
+          </td>
+            
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%else%>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Age</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @gm_form1s.each do |gm_form1| %>
+      <tr>
+          <td><%= gm_form1.user.first_name %></td>
+          <td><%= gm_form1.user.last_name %></td>
+          <td><%= gm_form1.user.age %></td>
+          <td><%= link_to 'edit', edit_gm_form1_path(gm_form1)%>
+          <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
+          </td>
+          
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%end%>
 <p>
   <%= link_to 'New GM Form1', new_gm_form1_path %> <br> 
 </p>
