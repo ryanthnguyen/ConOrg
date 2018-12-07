@@ -1,7 +1,45 @@
 <main role="main" class="container">
 
 <h1>Panelists</h1>
-
+  <%if current_user.admin == true%>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Title</th>
+        <th scope="col">Panelist Before</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Availability</th>
+        <th scope="col">Pen Name</th>
+        <th scope="col">Approved</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @panelist_forms.each do |panelist_form| %>
+        <tr>
+            <td><%= panelist_form.user.first_name %> <%= panelist_form.user.last_name %></td>
+            
+            <td><%= panelist_form.title %></td>
+            <td><%= panelist_form.panelist_before %></td>
+            <td><%= panelist_form.user.email %></td>
+            <td><%= panelist_form.user.phone %></td>
+            <td><%= panelist_form.availability %></td>
+            <td><%= panelist_form.pen_name %></td>
+            <%if panelist_form.approved == true%>
+            <td>Approved</td>
+            <%else%>
+            <td>Not Approved</td>
+            <%end%>
+            <td><%= link_to "Edit", edit_panelist_form_path(panelist_form)%>
+            <%= link_to 'destroy', panelist_form_path(panelist_form), method: :delete %></td>
+            
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%else%>
   <table class="table table-sm">
     <thead>
       <tr>
@@ -14,7 +52,7 @@
     </thead>
     <tbody>
       <% @panelist_forms.each do |panelist_form| %>
-        <%if dealer_form.approved == true%>
+        <%if panelist_form.approved == true%>
           <tr>
               <td><%= panelist_form.pen_name %></td>
               <td><%= panelist_form.title %></td>
@@ -26,7 +64,7 @@
       <% end %>
     </tbody>
   </table>
-
+<%end%>
 <p>
   <%= link_to 'Schedule', schedule_path %> <br>
   <%= link_to 'Home', home_path %> <br>  

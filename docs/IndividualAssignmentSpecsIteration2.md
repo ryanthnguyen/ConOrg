@@ -54,13 +54,13 @@
 
 ### Task 2: Unit Testing
 
-- Description: Create unit testings for the models 
+- Description: Create unit testings for the models
 - How to Evaluate: check the unit tests in the test folder
 - Outcome of Task: xxx
 
 ### Task 3: Forms
 
-- Description: Create general form and link it to all the form pages 
+- Description: Create general form and link it to all the form pages
 - How to Evaluate: Able to create specific forms in each form page
 - Outcome of Task: xxx
 
@@ -68,8 +68,8 @@
 
 ### Task 1: Create Admin User Page
 
-- Description: Create an Admin user paged based off the general wire-frame provided so that information is able to be checked as well as edited easily from one main page. 
-- How to Evaluate: Check page views once completed and then use the available options to view data. 
+- Description: Create an Admin user paged based off the general wire-frame provided so that information is able to be checked as well as edited easily from one main page.
+- How to Evaluate: Check page views once completed and then use the available options to view data.
 - Outcome of Task: xxx
 
 ### Task 2: Input Validation on Login Credentials

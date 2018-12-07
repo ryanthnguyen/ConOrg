@@ -1,13 +1,38 @@
 <main role="main" class="container">
 
 <h1>Games</h1>
-
+<%if current_user.admin == true%>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+      <th scope="col">Game</th>
+      <th scope="col">Approved</th>
+      <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @gm_form2s.each do |gm_form2| %>
+        <tr>
+          <td><%= gm_form2.user.first_name %> <%= gm_form2.user.last_name %></td>
+            <td><%= gm_form2.games %></td>
+            <%if gm_form2.approved == true%>
+            <td>Approved</td>
+            <%else%>
+            <td>Not Approved</td>
+            <%end%>
+          <td><%= link_to 'edit', edit_gm_form2_path(gm_form2)%>
+          <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
+          </td> 
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%else%>
 <table class="table table-sm">
   <thead>
     <tr>
-      <th scope="col">GM ID</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
+      <th scope="col">Name</th>
       <th scope="col">Game</th>
       <th scope="col"></th>
     </tr>
@@ -16,15 +41,14 @@
     <% @gm_form2s.each do |gm_form2| %>
       <%if gm_form2.approved == true%>
         <tr>
-            <td><%= gm_form2.id %></td>
-            <td><%= gm_form2.first_name %></td>
-            <td><%= gm_form2.last_name %></td>
+            <td><%= gm_form2.user.first_name %> <%= gm_form2.user.last_name %></td>
             <td><%= gm_form2.games %></td>
         </tr>
       <%end%>
     <% end %>
   </tbody>
 </table>
+<%end%>
 <p>
   <%= link_to 'Schedule', schedule_path %> <br>
   <%= link_to 'Home', home_path %> <br> 

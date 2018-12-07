@@ -1,4 +1,7 @@
 <main role="main" class="container">
+<%if current_user.admin == true%>
+
+<%else%>
 <p>
 
     <b>Name</b> <%= @user.first_name%> <%= @user.last_name%>
@@ -123,7 +126,8 @@
         <p>
         <%= link_to 'New GM Application', new_gm_form1_path(@user) %> <br> 
         </p>
-
+        <% @user.gm_form1s.each do |gm_form1| %>
+            <%if gm_form1.approved == true%>
         <h2>GM Games Registration</h2>
     <table class="table table-sm">
         <thead>
@@ -135,20 +139,25 @@
             </tr>
         </thead>
         <tbody>
-            <% @user.gm_form2s.each do |gm_form2| %>
-            <tr>
-                <td><%= gm_form2.games %></td>
-                <td></td>
-                <td></td>
-                <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
-                <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
-                </td>
-            </tr>
-            <% end %>
-        </tbody>
-        </table>
+        
+                <% @user.gm_form2s.each do |gm_form2| %>
+                <tr>
+                    <td><%= gm_form2.games %></td>
+                    <td></td>
+                    <td></td>
+                    <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
+                    <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
+                    </td>
+                </tr>
+                <% end %>
+                </tbody>
+            </table>
+            
         <p>
         <%= link_to 'New Game Application', new_gm_form2_path(@user) %> <br> 
         </p>
+        <%end%>
+        <%end%>
 </p>
+<%end%>
 </main><!-- /.container -->
