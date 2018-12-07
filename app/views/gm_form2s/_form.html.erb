@@ -32,6 +32,11 @@
         <%= form.label :games %>
         <%= form.text_field :games, class: 'form-control' %>
     </div>
+    <%if current_user.admin == true%>
+    <div class="field">
+        <%= form.label :approved %>
+        <%= form.text_field :approved, class: 'form-control' %>
+    </div>
         <div class="actions">
         <%= form.submit 'Update gm_form2', class: 'btn btn-primary'%>
         </div>

@@ -7,6 +7,7 @@
 #  age                            :integer
 #  amount_of_panels_at_convention :integer
 #  amount_of_pro_row              :integer
+#  approved                       :boolean
 #  availability                   :string
 #  badge_name                     :string
 #  city                           :string
