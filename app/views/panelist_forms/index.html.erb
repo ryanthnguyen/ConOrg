@@ -2,28 +2,31 @@
 
 <h1>Panelists</h1>
 
-<table class="table table-sm">
-  <thead>
-    <tr>
-      <th scope="col">Pen Name</th>
-      <th scope="col">Title</th>
-      <th scope="col">Email</th>
-      <th scope="col">Availability</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @panelist_forms.each do |panelist_form| %>
-    <tr>
-        <td><%= panelist_form.pen_name %></td>
-        <td><%= panelist_form.title %></td>
-        <td><%= panelist_form.email_address %></td>
-        <td><%= panelist_form.availability %></td>
-        
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Pen Name</th>
+        <th scope="col">Title</th>
+        <th scope="col">Email</th>
+        <th scope="col">Availability</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @panelist_forms.each do |panelist_form| %>
+        <%if dealer_form.approved == true%>
+          <tr>
+              <td><%= panelist_form.pen_name %></td>
+              <td><%= panelist_form.title %></td>
+              <td><%= panelist_form.email_address %></td>
+              <td><%= panelist_form.availability %></td>
+              
+          </tr>
+        <%end%>
+      <% end %>
+    </tbody>
+  </table>
+
 <p>
   <%= link_to 'Schedule', schedule_path %> <br>
   <%= link_to 'Home', home_path %> <br>  

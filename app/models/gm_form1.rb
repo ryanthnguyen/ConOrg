@@ -18,6 +18,7 @@
 class GmForm1 < ApplicationRecord
   belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form1s
   belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :gm_form1s, optional: true
+  has_many :gm_form2s, class_name: 'GmForm2', foreign_key: 'gm_form1_id', inverse_of: :gm_form1s, dependent: :destroy
   validates :address, uniqueness: true, presence: true
   validates :age, numericality: {only_integer: true}, presence: true
   validates :city, length: { maximum: 50 }, presence: true
