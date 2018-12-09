@@ -1,5 +1,5 @@
 <% provide(:title, 'Scheduling')%>
-
+<% content_for :content do %>
     <main role="main" class="container">
 
       <div class="starter-template">
@@ -28,32 +28,28 @@
               <% end %>
             </tbody>
           </table>
-          
-              
-          <br>
+        
+        <h1>Games</h1>
 
-          <h1>Games</h1>
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Game</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @gm_form2s.each do |gm_form2| %>
+              <tr>
+                  <td><%= gm_form2.games %></td>
 
-            <table class="table table-sm">
-              <thead>
-                <tr>
-                  <th scope="col">Game</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @gm_form2s.each do |gm_form2| %>
-                <tr>
-                    <td><%= gm_form2.games %></td>
-
-                    
-                </tr>
-                <% end %>
-              </tbody>
-            </table>
-            <p>
-            <%= link_to 'Home', home_path %> <br> 
-          </p>
+                  
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+            
         </div>
 
     </main><!-- /.container -->
+    <%end%>
