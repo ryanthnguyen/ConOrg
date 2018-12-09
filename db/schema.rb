@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_06_233737) do
+ActiveRecord::Schema.define(version: 2018_12_09_080335) do
 
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
@@ -27,19 +27,10 @@ ActiveRecord::Schema.define(version: 2018_12_06_233737) do
   end
 
   create_table "dealer_forms", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
     t.string "badge_name"
-    t.integer "age"
     t.string "business_name"
     t.string "type_of_merchandise_or_service"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.integer "zip"
-    t.integer "phone"
     t.string "company_website_address"
-    t.string "email_address"
     t.integer "number_of_spaces"
     t.string "display_require_AC_power"
     t.integer "number_of_memberships"
@@ -52,49 +43,43 @@ ActiveRecord::Schema.define(version: 2018_12_06_233737) do
   end
 
   create_table "gm_form1s", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.integer "zip"
-    t.integer "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
+    t.string "name_on_badge"
+    t.string "t_shirt_size"
+    t.string "info_for_staff"
     t.boolean "approved"
   end
 
   create_table "gm_form2s", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.integer "zip"
-    t.integer "age"
-    t.string "games"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
+    t.string "title_of_adventure_or_session"
+    t.string "type_of_game"
+    t.string "game_system_used"
+    t.string "time_needed_for_game"
+    t.integer "minimum_number_of_players"
+    t.integer "maximum_number_of_players"
+    t.string "materials_needed"
+    t.string "player_experience"
+    t.string "game_attitude"
+    t.string "age_restriction"
+    t.string "start_time_first_choice"
+    t.string "start_time_second_choice"
+    t.string "start_time_third_choice"
+    t.string "game_description"
+    t.string "info_for_staff"
     t.boolean "approved"
   end
 
   create_table "panelist_forms", force: :cascade do |t|
     t.string "title"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.integer "zip"
-    t.integer "age"
     t.string "pen_name"
     t.string "badge_name"
-    t.integer "phone"
-    t.string "email_address"
     t.string "website"
     t.string "availability"
     t.string "primary_professional_focus"
@@ -115,12 +100,6 @@ ActiveRecord::Schema.define(version: 2018_12_06_233737) do
   end
 
   create_table "registration_forms", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.integer "zip"
     t.integer "different_prices"
     t.string "payment_type"
     t.string "coupon_codes"
@@ -148,6 +127,8 @@ ActiveRecord::Schema.define(version: 2018_12_06_233737) do
     t.integer "age"
     t.integer "phone"
     t.boolean "admin"
+    t.string "middle_name"
+    t.string "membership_type"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

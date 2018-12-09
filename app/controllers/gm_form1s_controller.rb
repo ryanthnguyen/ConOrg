@@ -23,7 +23,7 @@ class GmForm1sController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
-        @gm_form1 = GmForm1.new(params.require(:gm_form1).permit(:first_name, :last_name, :address, :city, :state, :zip, :age))
+        @gm_form1 = GmForm1.new(params.require(:gm_form1).permit(:name_on_badge, :t_shirt_size, :info_for_staff))
         @user.gm_form1s << @gm_form1
         if @user.save
             redirect_to user_url(@user), notice: 'gm_form1 Successfully added'
@@ -44,7 +44,7 @@ class GmForm1sController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: gm_form1 not found'
         end
-        if @gm_form1.update(params.require(:gm_form1).permit(:first_name, :last_name, :address, :city, :state, :zip, :age, :approved))
+        if @gm_form1.update(params.require(:gm_form1).permit(:name_on_badge, :t_shirt_size, :info_for_staff, :approved))
             redirect_to user_url(@gm_form1.user), notice: 'gm_form1 successfully updated'
         else
             flash.now[:alert] = 'Error! unable to update'

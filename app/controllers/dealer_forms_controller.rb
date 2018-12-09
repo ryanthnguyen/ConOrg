@@ -25,7 +25,7 @@ class DealerFormsController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
-        @dealer_form = DealerForm.new(params.require(:dealer_form).permit(:first_name, :last_name, :badge_name, :age, :business_name, :type_of_merchandise_or_service, :address, :city, :state, :zip, :phone, :company_website_address, :email_address, :number_of_spaces, :display_require_AC_power, :number_of_memberships, :last_names_ages_of_extra_members))
+        @dealer_form = DealerForm.new(params.require(:dealer_form).permit(:badge_name, :business_name, :type_of_merchandise_or_service, :company_website_address, :number_of_spaces, :display_require_AC_power, :number_of_memberships, :last_names_ages_of_extra_members))
         @user.dealer_forms << @dealer_form
         if @user.save
             redirect_to user_url(@user), notice: 'dealer_form Successfully added'
@@ -46,7 +46,7 @@ class DealerFormsController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: dealer_form not found'
         end
-        if @dealer_form.update(params.require(:dealer_form).permit(:first_name, :last_name, :badge_name, :age, :business_name, :type_of_merchandise_or_service, :address, :city, :state, :zip, :phone, :company_website_address, :email_address, :number_of_spaces, :display_require_AC_power, :number_of_memberships, :last_names_ages_of_extra_members, :approved))
+        if @dealer_form.update(params.require(:dealer_form).permit(:badge_name, :business_name, :type_of_merchandise_or_service, :company_website_address, :number_of_spaces, :display_require_AC_power, :number_of_memberships, :last_names_ages_of_extra_members, :approved))
             redirect_to user_url(@dealer_form.user), notice: 'dealer_form successfully updated'
         else
             flash.now[:alert] = 'Error! unable to update'
