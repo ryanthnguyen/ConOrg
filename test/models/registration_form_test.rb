@@ -19,4 +19,8 @@ class RegistrationFormTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  test "valid input" do 
+    one = registration_forms(:one)
+    assert one.valid?
+  end
 end

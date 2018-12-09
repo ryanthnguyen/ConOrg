@@ -34,4 +34,59 @@ class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  #test for valid input
+  test "valid input" do
+    one = users(:one)
+    assert one.valid?
+  end
+
+  test "valid name" do
+    one = users(:one)
+    one.first_name = ""
+    one.middle_name = ""
+    one.last_name = ""
+    assert_not one.valid?
+  end
+
+  test "valid address" do 
+    one = users(:one)
+    one.address = ""
+    assert_not one.valid?
+  end
+
+  test "valid city" do
+    one = users(:one)
+    one.city = "asdfasdfasdfasdfasdfadsfklsajdfl;kafj;dsalkfjdsl;fkjds;flkdsjfl;skfjs;lfkaj;flkdsjfkldjfkjasd;aslkdf"
+    assert_not one.valid?
+  end
+
+  test "valid state" do 
+    one = users(:one)
+    one.state = "Tennessee"
+    assert_not one.valid?
+  end
+
+  test "valid zip" do 
+    one = users(:one)
+    one.zip = "three eight zero seventeen"
+    assert_not one.valid?
+  end
+
+  test "valid age" do 
+    one = users(:one)
+    one.age = ""
+    assert_not one.valid?
+  end
+
+  test "valid phone" do 
+    one = users(:one)
+    one.phone = ""
+    assert_not one.valid?
+  end
+
+  test "valid membership type" do 
+    one = users(:one)
+    one.membership_type = "regular member"
+    assert_not one.valid?
+  end
 end

@@ -34,8 +34,29 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  first_name: "Quoc"
+  middle_name: "Thang"
+  last_name: "Nguyen"
+  address: "3393 Shea Road"
+  city: "Collierville"
+  state: "TN"
+  zip: 38017
+  age: 21
+  email: "ryanthnguyen@gmail.com"
+  phone: 9014578728
+  membership_type: "Consuite Giveaway" 
+
+two: 
+  first_name: "Emily"
+  middle_name: "Zang"
+  last_name: "Xiao"
+  address: "1321 Hills Top"
+  city: "Memphis"
+  state: "TN"
+  zip: 22123
+  age: 21
+  email: "exaio123@gmail.com"
+  phone: 9013212321
+  membership_type: "Consuite Giveaway"
+

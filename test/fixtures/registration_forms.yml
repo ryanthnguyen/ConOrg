@@ -15,24 +15,14 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  first_name: MyString
-  last_name: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  different_prices: 1
-  payment_type: MyString
-  coupon_codes: MyString
+one: 
+  different_prices: 25
+  payment_type: "credit"
+  coupon_codes: "asxlasksl"
 
-two:
-  first_name: MyString
-  last_name: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  different_prices: 1
-  payment_type: MyString
-  coupon_codes: MyString
+two: 
+  different_prices: 10
+  payment_type: "debit"
+  coupon_codes: "asdfxlks"
+  
+ 
