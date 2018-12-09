@@ -11,47 +11,87 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <%= link_to 'ConOrg', home_path, class: 'navbar-brand' %>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item <%= active_class(home_path) %>">
-                <%= link_to 'Home', home_path, class: 'nav-link' %>
-              </li>
-              <li class="nav-item <%= active_class(eventinfo_path) %>">
-                <%= link_to 'Event Info', eventinfo_path, class: 'nav-link' %>
-              </li>
-              
-<%
-=begin
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-=end
-%>
-<%
-=begin
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-=end
-%>
+  <% if user_signed_in? %>
+      
+  <div>
+    <% if yield :headerImage %>
+      <div class="container-fluid d-flex flex-row justify-content-center flex-fill conbanner">
+        <%= yield :headerImage %>
       </div>
-    </nav>
+    <% end %>
+    
+
+    <div class="container text-light">
+      <div class="row">
+        <div class="col d-flex">
+          <div class="col-1">
+            <ul class="left-nav nav nav-fill flex-column align-self-start">
+              <li class="nav-item"><%= link_to "Information", eventinfo_path %></li>
+              <li class="nav-item"><%= link_to "Schedule", schedule_path%></li>
+              <li class="nav-item"><%= link_to "Panelists", panelist_forms_path%></li>
+              <li class="nav-item"><%= link_to "Gaming", gm_form2s_path%></li>
+              <li class="nav-item"><%= link_to "Dealers", dealer_forms_path%></li>
+              <li class="nav-item"><%= link_to "Hotels", hotels_path%></li>
+              <li class="nav-item"><%= link_to "Pricing", pricinginformation_path%></li>
+              <li class="nav-item">Registration</li>
+              <li class="nav-item"><%= link_to "Home", home_path %></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <% yield :content %>
+          </div>
+
+          <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
+            <%if current_user.admin == true%>
+            <li class="nav-item"><%= link_to "Profile Page/Admin", user_path(current_user.id) %></li>
+            <%else%>
+            <li class="nav-item"><%= link_to "Profile Page", user_path(current_user.id) %></li>
+            <%end%>
+            <li class="nav-item"><%= link_to "User Index", users_path%></li>
+            <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
+          </ul>
+        </div>        
+      </div>
+  </div>
+  <%else%>
+  <div>
+    <% if yield :headerImage %>
+      <div class="container-fluid d-flex flex-row justify-content-center flex-fill conbanner">
+        <%= yield :headerImage %>
+      </div>
+    <% end %>
+
+    <div class="container text-light">
+      <div class="row">
+        <div class="col d-flex">
+          <div class="col-1">
+            <ul class="left-nav nav nav-fill flex-column align-self-start">
+              <li class="nav-item"><%= link_to "Information", eventinfo_path %></li>
+              <li class="nav-item"><%= link_to "Schedule", schedule_path%></li>
+              <li class="nav-item"><%= link_to "Panelists", panelist_forms_path%></li>
+              <li class="nav-item"><%= link_to "Gaming", gm_form2s_path%></li>
+              <li class="nav-item"><%= link_to "Dealers", dealer_forms_path%></li>
+              <li class="nav-item"><%= link_to "Hotels", hotels_path%></li>
+              <li class="nav-item"><%= link_to "Pricing", pricinginformation_path%></li>
+              <li class="nav-item">Registration</li>
+              <li class="nav-item"><%= link_to "Home", home_path %></li>
+            </ul>
+          </div>
+
+          <div class="col text-light">
+            <%= yield :content %>
+          </div>
+
+          <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
+            <li class="nav-item"><%= link_to "Signup", new_user_registration_path %></li>
+            <li class="nav-item"><%= link_to "Login", new_user_session_path %></li>
+            
+          </ul>
+        </div>        
+      </div>
+  </div>
+  <%end%>
 
     <% if flash[:notice] %>
       <div class="alert alert-success" role="alert">

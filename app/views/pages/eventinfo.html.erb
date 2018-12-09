@@ -1,18 +1,34 @@
 <% provide(:title, 'Event Info')%>
-
+<% content_for :content do %>
     <main role="main" class="container">
+  
+      <h1>About</h1>
 
-      <div class="starter-template">
+      <p> MidSouthCon is presented by Mid-South Science and Fictions Conventions, Inc. 
+      A 501(c)3 non-profit corporation who uses the convention to promote education and 
+      raise money for charities like Literacy Mid-South and the Science Fiction Writers of 
+      America Emergency Medical Fund. Over the years we have raised over $65,000 for our charities.
+      </p>
+      <p>MidSouthCon is the longest-running annual fan-run multi-genre Science Fiction Convention 
+      in the Mid-South.  It covers a diverse section of fannish culture that includes science fiction, 
+      fantasy, science, comics, horror, education, costuming, anime, and gaming. MidSouthCon has an 
+      average of 2200 attendees, including over 100 authors, editors, publishers, scientists, 
+      artists and other guests and panelists. It features  more then 200 hours of programing, 
+      including panels, our annual Art and and Charity Auctions, Masquerade costume contest, 
+      and more. There are also hundreds of hours of gaming running non-stop throughout the weekend.
+      </p>
+      <p>In addition to all the programing and gaming, MidSouthCon has all the staples of traditional 
+      science fiction conventions, including a first class Art Show featuring art for sale by artists 
+      from across the country, a well-stocked Dealer’s Room with venders selling a wide variety of 
+      genre items, and a Con-Suite with free sodas and munchies where you can quench your thirst, 
+      sate your appetite, and schmooze with other attendees.
+      </p>
 
-        <h1>Midsouth Con Information</h1>
-        
-        <p>
-        <%= link_to "Hotels", hotels_path%><br>
-        <%= link_to "Pricing Information", pricinginformation_path%><br>
-        <%= link_to "Home", home_path %>
-        </p>
-              
-              
-        </div>
+      <br>
+
+      <h1>Contact Information</h1>
+      
+      <li>General Information <%= mail_to("Info", "info@midsouthcon.org") %></li>
 
     </main><!-- /.container -->
+<%end%>
