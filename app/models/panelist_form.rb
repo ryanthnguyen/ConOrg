@@ -30,12 +30,12 @@ class PanelistForm < ApplicationRecord
   belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :panelist_forms, optional: true
   validates :amount_of_panels_at_convention, numericality: {only_integer:true}, presence: true
   validates :amount_of_pro_row, numericality: {only_integer: true}, presence: true
-  #validates_time :availability, :between => ['9:00am', '11:59pm'], presence: true
+  validates_time :availability, :between => ['9:00am', '11:59pm'], presence: true
   validates :badge_name, length: { maximum: 50 }, presence: true
   validates :panel_suggestions, length: { maximum: 1000 }, presence: true
   validates :panelist_before, inclusion: {in: [true, false]}, presence: true
   validates :pen_name, length: { maximum: 50 }, presence: true
-  #validates :place_art_in_art_room, inclusion: {in: [true, false]}, presence: true
+  validates :place_art_in_art_room, inclusion: {in: [true, false]}, presence: true
   validates :primary_professional_focus, inclusion: {in: %w[Anime Art/Jewelry Children's/YA Comics Costuming Gaming Movies/TV Music/Dance Paranormal Science Literary]}, presence: true
   validates :recent_credits, length: {maximum: 50}, presence: true
   validates :secondary_professional_focus, inclusion: {in: %w[Anime Art/Jewelry Children's/YA Comics Costuming Gaming Movies/TV Music/Dance Paranormal Science Literary]}, presence: true
@@ -43,4 +43,5 @@ class PanelistForm < ApplicationRecord
   validates :time_in_pro_row, inclusion: {in: [true, false]}, presence: true
   validates :title, length: {maximum: 50}, presence: true
   validates :website, presence: true
+  validates :approved, inclusion: {in: [true, false]}
 end

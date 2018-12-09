@@ -19,4 +19,5 @@ class RegistrationForm < ApplicationRecord
   validates :coupon_codes, length: {maximum: 10}
   validates :different_prices, inclusion: {in: [10, 25, 35, 17.50]}, presence: true
   validates :payment_type, inclusion: {in: %w[credit debit]}, presence: true
+  validates :approved, inclusion: {in: [true, false]}
 end
