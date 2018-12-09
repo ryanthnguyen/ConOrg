@@ -27,54 +27,19 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   title: MyString
-#   first_name: MyString
-#   last_name: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   age: 1
-#   pen_name: MyString
-#   badge_name: MyString
-#   phone: 1
-#   email_address: MyString
-#   website: MyString
-#   availability: MyString
-#   primary_professional_focus: MyString
-#   secondary_professional_focus: MyString
-#   panelist_before: false
-#   time_in_pro_row: false
-#   amount_of_pro_row: 1
-#   place_art_in_art_room: false
-#   recent_credits: MyString
-#   short_biography: MyString
-#   panel_suggestions: MyString
-#   amount_of_panels_at_convention: 1
-
-# two:
-#   title: MyString
-#   first_name: MyString
-#   last_name: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   age: 1
-#   pen_name: MyString
-#   badge_name: MyString
-#   phone: 1
-#   email_address: MyString
-#   website: MyString
-#   availability: MyString
-#   primary_professional_focus: MyString
-#   secondary_professional_focus: MyString
-#   panelist_before: false
-#   time_in_pro_row: false
-#   amount_of_pro_row: 1
-#   place_art_in_art_room: false
-#   recent_credits: MyString
-#   short_biography: MyString
-#   panel_suggestions: MyString
-#   amount_of_panels_at_convention: 1
+one:
+  title: "Mr"
+  pen_name: "mysterio"
+  badge_name: "U-102121"
+  website: "ryanthnguyen.github.io"
+  availability: "9:11am"
+  primary_professional_focus: "Literary"
+  secondary_professional_focus: "Gaming"
+  panelist_before: true
+  time_in_pro_row: true
+  amount_of_pro_row: 10
+  place_art_in_art_room: true
+  recent_credits: "got credited with a lot of stuff"
+  short_biography: "I used to work in the circuit and now im here"
+  panel_suggestions: "I like to have a lot of ropes like a lot of ropes"
+  amount_of_panels_at_convention: 10
