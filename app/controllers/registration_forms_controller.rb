@@ -26,12 +26,7 @@ class RegistrationFormsController < ApplicationController
         end
         @registration_form = RegistrationForm.new(params.require(:registration_form).permit(:different_prices, :payment_type, :coupon_codes))
         @user.registration_forms << @registration_form
-        if @user.save
-            redirect_to user_url(@user), notice: 'registration_form Successfully added'
-        else
-            flash.now[:alert] = 'Error! unable to create'
-            render :new
-        end
+        redirect_to user_url(@user), notice: 'registration_form Successfully added'
     end
 
     def edit
