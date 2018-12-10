@@ -2,11 +2,11 @@
     <main role="main" class="container">
 <%= form_with model: @panelist_form, local: true do |form| %>
      <%= hidden_field_tag :user_id, user_id %>
+
      <div class="field">
         <%= form.label :title %>
         <%= form.text_field :title, class: 'form-control' %>
     </div>
-
     <div class="field">
         <%= form.label :pen_name %>
         <%= form.text_field :pen_name, class: 'form-control' %>
@@ -15,7 +15,6 @@
         <%= form.label :badge_name %>
         <%= form.text_field :badge_name, class: 'form-control' %>
     </div>
-
     <div class="field">
         <%= form.label :website %>
         <%= form.text_field :website, class: 'form-control' %>

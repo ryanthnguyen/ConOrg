@@ -3,12 +3,12 @@
 <%= form_with model: @dealer_form, local: true do |form| %>
      <%= hidden_field_tag :user_id, user_id%>
     <div class="field">
-        <%= form.label :business_name %>
-        <%= form.text_field :business_name, class: 'form-control' %>
-    </div>
-    <div class="field">
         <%= form.label :badge_name %>
         <%= form.text_field :badge_name, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :business_name %>
+        <%= form.text_field :business_name, class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :type_of_merchandise_or_service %>
@@ -30,9 +30,9 @@
         <%= form.label :number_of_memberships %>
         <%= form.text_field :number_of_memberships, class: 'form-control' %>
     </div>
-    <div class="field">
-        <%= form.label :list_names_ages_of_extra_members %>
-        <%= form.text_field :list_names_ages_of_extra_members, class: 'form-control' %>
+        <div class="field">
+        <%= form.label :name_and_age_of_members %>
+        <%= form.text_field :name_and_age_of_members, class: 'form-control' %>
     </div>
     <%if current_user.admin == true%>
     <div class="field">

@@ -7,6 +7,10 @@
         <%= form.text_field :first_name, class: 'form-control' %>
     </div>
     <div class="field">
+        <%= form.label :middle_name %>
+        <%= form.text_field :middle_name, class: 'form-control' %>
+    </div>
+        <div class="field">
         <%= form.label :last_name %>
         <%= form.text_field :last_name, class: 'form-control' %>
     </div>
@@ -37,6 +41,10 @@
     <div class="field">
         <%= form.label :phone %>
         <%= form.text_field :phone, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :membership_type %>
+        <%= form.text_field :membership_type, class: 'form-control' %>
     </div>
 
     <%if current_user.admin == true%>

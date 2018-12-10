@@ -3,16 +3,10 @@
 # Table name: registration_forms
 #
 #  id               :integer          not null, primary key
-#  address          :string
 #  approved         :boolean
-#  city             :string
 #  coupon_codes     :string
 #  different_prices :integer
-#  first_name       :string
-#  last_name        :string
 #  payment_type     :string
-#  state            :string
-#  zip              :integer
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #  admin_id         :integer
@@ -25,4 +19,8 @@ class RegistrationFormTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  test "valid input" do 
+    one = registration_forms(:one)
+    assert one.valid?
+  end
 end

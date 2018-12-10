@@ -2,40 +2,47 @@
 #
 # Table name: gm_form2s
 #
-#  id         :integer          not null, primary key
-#  address    :string
-#  age        :integer
-#  approved   :boolean
-#  city       :string
-#  first_name :string
-#  games      :string
-#  last_name  :string
-#  state      :string
-#  zip        :integer
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  admin_id   :integer
-#  user_id    :integer
+#  id                            :integer          not null, primary key
+#  age_restriction               :string
+#  approved                      :boolean
+#  game_attitude                 :string
+#  game_description              :string
+#  game_system_used              :string
+#  info_for_staff                :string
+#  materials_needed              :string
+#  maximum_number_of_players     :integer
+#  minimum_number_of_players     :integer
+#  player_experience             :string
+#  start_time_first_choice       :string
+#  start_time_second_choice      :string
+#  start_time_third_choice       :string
+#  time_needed_for_game          :string
+#  title_of_adventure_or_session :string
+#  type_of_game                  :string
+#  created_at                    :datetime         not null
+#  updated_at                    :datetime         not null
+#  admin_id                      :integer
+#  user_id                       :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  age: 1
-  games: MyString
+  title_of_adventure_or_session: "DnD"
+  type_of_game: "Role playing game"
+  game_system_used: "None"
+  time_needed_for_game: "3 hours"
+  minimum_number_of_players: 4
+  maximum_number_of_players: 8
+  materials_needed: "All materials for the game are provided by the gm"
+  player_experience: "Beginnners only"
+  game_attitude: "Serious"
+  age_restriction: "Suitable for all ages"
+  start_time_first_choice: "Friday 2:00pm"
+  start_time_second_choice: "Saturday 2:00am"
+  start_time_third_choice: "Friday 8:00pm"
+  game_description: "Come in and role play with us, we have cookies"
+  info_for_staff: "Please provide enough chairs for players and food"
 
-two:
-  first_name: MyString
-  last_name: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  age: 1
-  games: MyString
+
+

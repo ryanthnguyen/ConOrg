@@ -24,7 +24,7 @@ class RegistrationFormsController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: user not found'
         end
-        @registration_form = RegistrationForm.new(params.require(:registration_form).permit(:first_name, :last_name, :address, :city, :state, :zip, :different_prices, :payment_type, :coupon_codes))
+        @registration_form = RegistrationForm.new(params.require(:registration_form).permit(:different_prices, :payment_type, :coupon_codes))
         @user.registration_forms << @registration_form
         if @user.save
             redirect_to user_url(@user), notice: 'registration_form Successfully added'
@@ -45,7 +45,7 @@ class RegistrationFormsController < ApplicationController
         rescue
             redirect_to users_url, alert: 'Error: registration_form not found'
         end
-        if @registration_form.update(params.require(:registration_form).permit(:first_name, :last_name, :address, :city, :state, :zip, :different_prices, :payment_type, :coupon_codes))
+        if @registration_form.update(params.require(:registration_form).permit(:different_prices, :payment_type, :coupon_codes))
             redirect_to user_url(@registration_form.user), notice: 'registration_form successfully updated'
         else
             flash.now[:alert] = 'Error! unable to update'

@@ -2,37 +2,22 @@
 #
 # Table name: gm_form1s
 #
-#  id         :integer          not null, primary key
-#  address    :string
-#  age        :integer
-#  approved   :boolean
-#  city       :string
-#  first_name :string
-#  last_name  :string
-#  state      :string
-#  zip        :integer
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  admin_id   :integer
-#  user_id    :integer
+#  id             :integer          not null, primary key
+#  approved       :boolean
+#  info_for_staff :string
+#  name_on_badge  :string
+#  t_shirt_size   :string
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  admin_id       :integer
+#  user_id        :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  age: 1
+  name_on_badge: 'u-1231'
+  t_shirt_size: "M"
+  info_for_staff: "I like food"
 
-two:
-  first_name: MyString
-  last_name: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  age: 1
+

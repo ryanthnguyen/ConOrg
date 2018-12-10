@@ -1,2 +1,11 @@
 class ApplicationController < ActionController::Base
+    before_action :configure_permitted_parameters, if: :devise_controller?
+
+    protected
+
+        def configure_permitted_parameters
+            added_attrs = [:address, :age, :city, :email, :password, :first_name, :last_name, :membership_type, :middle_name, :phone, :state, :zip, :admin]
+            devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
+            devise_parameter_sanitizer.permit :account_update, keys: added_attrs
+        end
 end

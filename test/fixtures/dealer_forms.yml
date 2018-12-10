@@ -2,67 +2,30 @@
 #
 # Table name: dealer_forms
 #
-#  id                               :integer          not null, primary key
-#  address                          :string
-#  age                              :integer
-#  approved                         :boolean
-#  badge_name                       :string
-#  business_name                    :string
-#  city                             :string
-#  company_website_address          :string
-#  display_require_AC_power         :string
-#  email_address                    :string
-#  first_name                       :string
-#  last_name                        :string
-#  list_names_ages_of_extra_members :string
-#  number_of_memberships            :integer
-#  number_of_spaces                 :integer
-#  phone                            :integer
-#  state                            :string
-#  type_of_merchandise_or_service   :string
-#  zip                              :integer
-#  created_at                       :datetime         not null
-#  updated_at                       :datetime         not null
-#  admin_id                         :integer
-#  user_id                          :integer
+#  id                             :integer          not null, primary key
+#  approved                       :boolean
+#  badge_name                     :string
+#  business_name                  :string
+#  company_website_address        :string
+#  display_require_AC_power       :string
+#  name_and_age_of_members        :string
+#  number_of_memberships          :integer
+#  number_of_spaces               :integer
+#  type_of_merchandise_or_service :string
+#  created_at                     :datetime         not null
+#  updated_at                     :datetime         not null
+#  admin_id                       :integer
+#  user_id                        :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  badge_name: MyString
-  age: 1
-  business_name: MyString
-  type_of_merchandise_or_service: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  phone: 1
-  company_website_address: MyString
-  email_address: MyString
+  badge_name: 'mysterio'
+  business_name: 'Mr. mysterio'
+  type_of_merchandise_or_service: "all you can eat buffet"
+  company_website_address: 'ryanthnguyen.github.io'
   number_of_spaces: 1
-  display_require_AC_power: MyString
+  display_require_AC_power: 'yes'
   number_of_memberships: 1
-  list_names_ages_of_extra_members: MyString
-
-two:
-  first_name: MyString
-  last_name: MyString
-  badge_name: MyString
-  age: 1
-  business_name: MyString
-  type_of_merchandise_or_service: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: 1
-  phone: 1
-  company_website_address: MyString
-  email_address: MyString
-  number_of_spaces: 1
-  display_require_AC_power: MyString
-  number_of_memberships: 1
-  list_names_ages_of_extra_members: MyString
+  name_and_age_of_members: 'bob-21, dillar-22'
