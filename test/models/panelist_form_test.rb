@@ -9,14 +9,14 @@
 #  availability                   :string
 #  badge_name                     :string
 #  panel_suggestions              :string
-#  panelist_before                :boolean
+#  panelist_before                :string
 #  pen_name                       :string
-#  place_art_in_art_room          :boolean
+#  place_art_in_art_room          :string
 #  primary_professional_focus     :string
 #  recent_credits                 :string
 #  secondary_professional_focus   :string
 #  short_biography                :string
-#  time_in_pro_row                :boolean
+#  time_in_pro_row                :string
 #  title                          :string
 #  website                        :string
 #  created_at                     :datetime         not null

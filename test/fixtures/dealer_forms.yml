@@ -20,40 +20,12 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   first_name: MyString
-#   last_name: MyString
-#   badge_name: MyString
-#   age: 1
-#   business_name: MyString
-#   type_of_merchandise_or_service: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   phone: 1
-#   company_website_address: MyString
-#   email_address: MyString
-#   number_of_spaces: 1
-#   display_require_AC_power: MyString
-#   number_of_memberships: 1
-#   list_names_ages_of_extra_members: MyString
-
-# two:
-#   first_name: MyString
-#   last_name: MyString
-#   badge_name: MyString
-#   age: 1
-#   business_name: MyString
-#   type_of_merchandise_or_service: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   phone: 1
-#   company_website_address: MyString
-#   email_address: MyString
-#   number_of_spaces: 1
-#   display_require_AC_power: MyString
-#   number_of_memberships: 1
-#   list_names_ages_of_extra_members: MyString
+one:
+  badge_name: 'mysterio'
+  business_name: 'Mr. mysterio'
+  type_of_merchandise_or_service: "all you can eat buffet"
+  company_website_address: 'ryanthnguyen.github.io'
+  number_of_spaces: 1
+  display_require_AC_power: 'yes'
+  number_of_memberships: 1
+  list_names_ages_of_extra_members: 'bob-21, dillar-22'

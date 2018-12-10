@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_09_080335) do
+ActiveRecord::Schema.define(version: 2018_12_10_051050) do
 
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
@@ -84,10 +84,10 @@ ActiveRecord::Schema.define(version: 2018_12_09_080335) do
     t.string "availability"
     t.string "primary_professional_focus"
     t.string "secondary_professional_focus"
-    t.boolean "panelist_before"
-    t.boolean "time_in_pro_row"
+    t.string "panelist_before"
+    t.string "time_in_pro_row"
     t.integer "amount_of_pro_row"
-    t.boolean "place_art_in_art_room"
+    t.string "place_art_in_art_room"
     t.string "recent_credits"
     t.string "short_biography"
     t.string "panel_suggestions"

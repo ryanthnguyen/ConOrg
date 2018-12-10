@@ -25,7 +25,7 @@ class PanelistFormsController < ApplicationController
         end
         @panelist_form = PanelistForm.new(params.require(:panelist_form).permit(:title, :pen_name, :badge_name, :website, :availability, :primary_professional_focus, :secondary_professional_focus, :panelist_before, :time_in_pro_row, :amount_of_pro_row, :place_art_in_art_room, :recent_credits, :short_biography, :panel_suggestions, :amount_of_panels_at_convention))
         @user.panelist_forms << @panelist_form
-        if @user.save
+        if @user.save!
             redirect_to user_url(@user), notice: 'panelist_form Successfully added'
         else
             flash.now[:alert] = 'Error! unable to create'
