@@ -1,37 +1,16 @@
 <%= form_with model: @gm_form1, local: true do |form| %>
      <%= hidden_field_tag :user_id, user_id%>
     <div class="field">
-        <%= form.label :first_name %>
-        <%= form.text_field :first_name, class: 'form-control' %>
+        <%= form.label :name_on_badge %>
+        <%= form.text_field :name_on_badge, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :last_name %>
-        <%= form.text_field :last_name, class: 'form-control' %>
+        <%= form.label :t_shirt_size %>
+        <%= form.text_field :t_shirt_size, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :address %>
-        <%= form.text_field :address, class: 'form-control' %>
-    </div>
-    <div class="field">
-        <%= form.label :city %>
-        <%= form.text_field :city, class: 'form-control' %>
-    </div>
-    <div class="field">
-        <%= form.label :state %>
-        <%= form.text_field :state, class: 'form-control' %>
-    </div>
-    <div class="field">
-        <%= form.label :zip %>
-        <%= form.text_field :zip, class: 'form-control' %>
-    </div>
-    <div class="field">
-        <%= form.label :age %>
-        <%= form.text_field :age, class: 'form-control' %>
-    </div>
-    <%if current_user.admin == true%>
-    <div class="field">
-        <%= form.label :approved %>
-        <%= form.text_field :approved, class: 'form-control' %>
+        <%= form.label :info_for_staff %>
+        <%= form.text_field :info_for_staff, class: 'form-control' %>
     </div>
     <%end%>
         <div class="actions">
