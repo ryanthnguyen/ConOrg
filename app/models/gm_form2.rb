@@ -26,10 +26,9 @@
 #
 
 class GmForm2 < ApplicationRecord
-  belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form2s
+  belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form2s, optional: true
   belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :gm_form2s, optional: true
   validates :age_restriction, inclusion: {in: ["Youth", "Suitable for all ages", "Teen","Adult"]}
-  validates :approved, inclusion: {in: [true, false]}
   validates :game_attitude, inclusion: {in: ["Very serious", "Serious", "Fun","Silly","Very silly"]}
   validates :game_description, length: { maximum: 800 }
   validates :game_system_used, length: { maximum: 300 }

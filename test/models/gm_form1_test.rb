@@ -19,4 +19,21 @@ class GmForm1Test < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+
+  test "valid input" do 
+    one = gm_form1s(:one)
+    assert one.valid?
+  end
+
+  test "valid t_shirt_size" do 
+    one = gm_form1s(:one)
+    one.t_shirt_size = 1
+    assert_not one.valid?
+  end
+
+  test "valid info_for_staff" do 
+    one = gm_form1s(:one)
+    one.info_for_staff = ""
+    assert_not one.valid?
+  end
 end

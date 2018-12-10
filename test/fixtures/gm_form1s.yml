@@ -15,20 +15,9 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   first_name: MyString
-#   last_name: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   age: 1
+one:
+  name_on_badge: 'u-1231'
+  t_shirt_size: "M"
+  info_for_staff: "I like food"
 
-# two:
-#   first_name: MyString
-#   last_name: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   age: 1
+

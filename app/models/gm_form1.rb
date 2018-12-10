@@ -14,10 +14,10 @@
 #
 
 class GmForm1 < ApplicationRecord
-  belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form1s
+  belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form1s, optional:true
   belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :gm_form1s, optional: true
   has_many :gm_form2s, class_name: 'GmForm2', foreign_key: 'gm_form1_id', inverse_of: :gm_form1s, dependent: :destroy
-  validates :approved, inclusion: {in: [true, false]}
-  validates :name_of_badge, length: {maximum:500}
-  validates :t_shirt_size, inclusion: {in: ["S", "M","L","XL","2X","3X","4X"]}
+  validates :name_on_badge, length: {maximum:500}, presence:true
+  validates :t_shirt_size, inclusion: {in: ["S", "M","L","XL","2X","3X","4X"]}, presence: true
+  validates :info_for_staff, length: {maximum: 1000}, presence: true
 end

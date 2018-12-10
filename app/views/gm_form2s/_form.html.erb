@@ -1,37 +1,65 @@
 <%= form_with model: @gm_form2, local: true do |form| %>
      <%= hidden_field_tag :user_id, user_id%>
     <div class="field">
-        <%= form.label :first_name %>
-        <%= form.text_field :first_name, class: 'form-control' %>
+        <%= form.label :title_of_adventure_or_session %>
+        <%= form.text_field :title_of_adventure_or_session, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :last_name %>
-        <%= form.text_field :last_name, class: 'form-control' %>
+        <%= form.label :type_of_game %>
+        <%= form.text_field :type_of_game, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :address %>
-        <%= form.text_field :address, class: 'form-control' %>
+        <%= form.label :game_system_used %>
+        <%= form.text_field :game_system_used, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :city %>
-        <%= form.text_field :city, class: 'form-control' %>
+        <%= form.label :time_needed_for_game %>
+        <%= form.text_field :time_needed_for_game, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :state %>
-        <%= form.text_field :state, class: 'form-control' %>
+        <%= form.label :minimum_number_of_players %>
+        <%= form.text_field :minimum_number_of_players, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :zip %>
-        <%= form.text_field :zip, class: 'form-control' %>
+        <%= form.label :maximum_number_of_players %>
+        <%= form.text_field :maximum_number_of_players, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :age %>
-        <%= form.text_field :age, class: 'form-control' %>
+        <%= form.label :materials_needed %>
+        <%= form.text_field :materials_needed, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :games %>
-        <%= form.text_field :games, class: 'form-control' %>
+        <%= form.label :player_experience %>
+        <%= form.text_field :player_experience, class: 'form-control' %>
     </div>
+    <div class="field">
+        <%= form.label :game_attitude %>
+        <%= form.text_field :game_attitude, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :age_restriction %>
+        <%= form.text_field :age_restriction, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :start_time_first_choice %>
+        <%= form.text_field :start_time_first_choice, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :start_time_second_choice %>
+        <%= form.text_field :start_time_second_choice, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :start_time_third_choice %>
+        <%= form.text_field :start_time_third_choice, class: 'form-control' %>
+    </div>
+    <div class="field">
+        <%= form.label :game_description %>
+        <%= form.text_field :game_description, class: 'form-control' %>
+    </div>
+        <div class="field">
+        <%= form.label :info_for_staff %>
+        <%= form.text_field :info_for_staff, class: 'form-control' %>
+    </div>                    
     <%if current_user.admin == true%>
     <div class="field">
         <%= form.label :approved %>

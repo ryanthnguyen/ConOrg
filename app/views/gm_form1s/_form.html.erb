@@ -12,6 +12,11 @@
         <%= form.label :info_for_staff %>
         <%= form.text_field :info_for_staff, class: 'form-control' %>
     </div>
+    <%if current_user.admin == true%>
+    <div class="field">
+        <%= form.label :approved %>
+        <%= form.text_field :approved, class: 'form-control' %>
+    </div>
     <%end%>
         <div class="actions">
         <%= form.submit 'Update gm_form1', class: 'btn btn-primary'%>

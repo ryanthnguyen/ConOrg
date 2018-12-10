@@ -31,4 +31,8 @@ class GmForm2Test < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  test "valid input" do 
+    one = gm_form2s(:one)
+    assert one.valid?
+  end
 end

@@ -127,7 +127,7 @@
     <table class="table table-sm">
         <thead>
             <tr>
-            <th scope="col">Name         </th>
+            <th scope="col">badge name         </th>
             <th scope="col"></th>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -136,7 +136,7 @@
         <tbody>
             <% @user.gm_form1s.each do |gm_form1| %>
             <tr>
-                <td><%= gm_form1.first_name %></td>
+                <td><%= gm_form1.name_on_badge %></td>
                 <td></td>
                 <td></td>
                 <td><%= link_to 'edit', edit_gm_form1_path(gm_form1) %>
