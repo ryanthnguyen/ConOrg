@@ -25,12 +25,12 @@
         <%= form.text_field :display_require_AC_power, class: 'form-control' %>
     </div>
     <div class="field">
-        <%= form.label :list_names_ages_of_extra_members %>
-        <%= form.text_field :list_names_ages_of_extra_members, class: 'form-control' %>
-    </div>
-    <div class="field">
         <%= form.label :number_of_memberships %>
         <%= form.text_field :number_of_memberships, class: 'form-control' %>
+    </div>
+        <div class="field">
+        <%= form.label :name_and_age_of_members %>
+        <%= form.text_field :name_and_age_of_members, class: 'form-control' %>
     </div>
     <%if current_user.admin == true%>
     <div class="field">

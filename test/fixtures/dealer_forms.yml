@@ -2,20 +2,20 @@
 #
 # Table name: dealer_forms
 #
-#  id                               :integer          not null, primary key
-#  approved                         :boolean
-#  badge_name                       :string
-#  business_name                    :string
-#  company_website_address          :string
-#  display_require_AC_power         :string
-#  list_names_ages_of_extra_members :string
-#  number_of_memberships            :integer
-#  number_of_spaces                 :integer
-#  type_of_merchandise_or_service   :string
-#  created_at                       :datetime         not null
-#  updated_at                       :datetime         not null
-#  admin_id                         :integer
-#  user_id                          :integer
+#  id                             :integer          not null, primary key
+#  approved                       :boolean
+#  badge_name                     :string
+#  business_name                  :string
+#  company_website_address        :string
+#  display_require_AC_power       :string
+#  name_and_age_of_members        :string
+#  number_of_memberships          :integer
+#  number_of_spaces               :integer
+#  type_of_merchandise_or_service :string
+#  created_at                     :datetime         not null
+#  updated_at                     :datetime         not null
+#  admin_id                       :integer
+#  user_id                        :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
@@ -28,4 +28,4 @@ one:
   number_of_spaces: 1
   display_require_AC_power: 'yes'
   number_of_memberships: 1
-  list_names_ages_of_extra_members: 'bob-21, dillar-22'
+  name_and_age_of_members: 'bob-21, dillar-22'

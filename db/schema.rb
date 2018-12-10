@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_10_051050) do
+ActiveRecord::Schema.define(version: 2018_12_10_065135) do
 
   create_table "admins", force: :cascade do |t|
     t.string "first_name"
@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 2018_12_10_051050) do
     t.integer "number_of_spaces"
     t.string "display_require_AC_power"
     t.integer "number_of_memberships"
-    t.string "list_names_ages_of_extra_members"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "admin_id"
     t.boolean "approved"
+    t.string "name_and_age_of_members"
   end
 
   create_table "gm_form1s", force: :cascade do |t|
