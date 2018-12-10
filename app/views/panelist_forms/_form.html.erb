@@ -1,5 +1,6 @@
 <%= form_with model: @panelist_form, local: true do |form| %>
      <%= hidden_field_tag :user_id, user_id %>
+
      <div class="field">
         <%= form.label :title %>
         <%= form.text_field :title, class: 'form-control' %>

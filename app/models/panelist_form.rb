@@ -26,7 +26,7 @@
 #
 
 class PanelistForm < ApplicationRecord
-  belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :panelist_forms, optional: true
+  belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :panelist_forms
   belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :panelist_forms, optional: true
   validates :amount_of_panels_at_convention, numericality: {only_integer:true}, presence: true
   validates :amount_of_pro_row, numericality: {only_integer: true}, presence: true
