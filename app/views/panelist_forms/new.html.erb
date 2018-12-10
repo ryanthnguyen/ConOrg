@@ -1,11 +1,10 @@
-<main role="main" class="container">
+<% content_for :content do %>
+    <main role="main" class="container">
 
-    <h1>New Panelist Form</h1>
 
 
     <%= render 'form', user_id: @user.id, panelist_form: @panelist_form%>
 
-<p>
-    <%= link_to 'Home', home_path%>
-</p>
+
+<%end%>
 </main><!-- /.container -->

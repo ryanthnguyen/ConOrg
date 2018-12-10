@@ -1,5 +1,5 @@
-<main role="main" class="container">
-
+<% content_for :content do %>
+    <main role="main" class="container">
     <h1>Edit Dealer Form</h1>
 
 <%if current_user.admin == true%>
@@ -13,9 +13,6 @@
     <%else%>
     <%= render 'form', user_id: @dealer_form.user.id, dealer_form: @dealer_form%>
 
-<p>
-
-    <%= link_to 'Home', home_path%>
-</p>
+<%end%>
     <%end%>
 </main><!-- /.container -->

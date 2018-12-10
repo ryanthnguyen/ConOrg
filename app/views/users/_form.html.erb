@@ -1,3 +1,5 @@
+<% content_for :content do %>
+    <main role="main" class="container">
 <%= form_with model: @user, local: true do |form| %>
      
     <div class="field">
@@ -48,3 +50,5 @@
         <%= form.submit 'Update user', class: 'btn btn-primary'%>
         </div>
     <%end%>
+    <%end%>
+    </main>

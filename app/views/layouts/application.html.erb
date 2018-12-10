@@ -10,7 +10,17 @@
   </head>
 
   <body>
+  <% if flash[:notice] %>
+      <div class="alert alert-success" role="alert">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
 
+    <% if flash[:alert] %>
+      <div class="alert alert-danger" role="alert">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
   <% if user_signed_in? %>
       
   <div>
@@ -20,8 +30,9 @@
       </div>
     <% end %>
     
-
+    
     <div class="container text-light">
+    
       <div class="row">
         <div class="col d-flex">
           <div class="col-1">
@@ -39,21 +50,23 @@
           </div>
 
           <div class="col">
-            <% yield :content %>
+            <%= yield :content %>
           </div>
 
           <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
             <%if current_user.admin == true%>
-            <li class="nav-item"><%= link_to "Profile Page/Admin", user_path(current_user.id) %></li>
+            <li class="nav-item"><%= link_to "Profile", user_path(current_user.id) %></li>
             <%else%>
-            <li class="nav-item"><%= link_to "Profile Page", user_path(current_user.id) %></li>
+            <li class="nav-item"><%= link_to "Profile", user_path(current_user.id) %></li>
             <%end%>
-            <li class="nav-item"><%= link_to "User Index", users_path%></li>
+            <li class="nav-item"><%= link_to "Users", users_path%></li>
             <li class="nav-item"><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
           </ul>
         </div>        
       </div>
+      
   </div>
+  
   <%else%>
   <div>
     <% if yield :headerImage %>
@@ -68,9 +81,9 @@
           <div class="col-1">
             <ul class="left-nav nav nav-fill flex-column align-self-start">
               <li class="nav-item"><%= link_to "Information", eventinfo_path %></li>
-              <li class="nav-item"><%= link_to "Registration", new_user_registration_path %></li>
+
               <li class="nav-item"><%= link_to "Schedule", schedule_path%></li>
-              <li class="nav-item"><%= link_to "Panelists", panelinfo_path%></li>
+              <li class="nav-item"><%= link_to "Panelists", panelist_forms_path%></li>
               <li class="nav-item"><%= link_to "Gaming", gm_form2s_path%></li>
               <li class="nav-item"><%= link_to "Dealers", dealer_forms_path%></li>
               <li class="nav-item"><%= link_to "Hotels", hotels_path%></li>
@@ -84,7 +97,7 @@
           </div>
 
           <ul class="col col-1 nav nav-fill right-nav flex-column ml-auto align-self-start">
-            <li class="nav-item"><%= link_to "Signup", new_user_registration_path %></li>
+            <li class="nav-item"><%= link_to "Registration", new_user_registration_path %></li>
             <li class="nav-item"><%= link_to "Login", new_user_session_path %></li>
           </ul>
         </div>        
@@ -92,17 +105,7 @@
   </div>
   <%end%>
 
-    <% if flash[:notice] %>
-      <div class="alert alert-success" role="alert">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-
-    <% if flash[:alert] %>
-      <div class="alert alert-danger" role="alert">
-        <%= flash[:alert] %>
-      </div>
-    <% end %>
+    
     
     <%= yield %>
   </body>

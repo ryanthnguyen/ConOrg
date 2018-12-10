@@ -5,9 +5,11 @@
       <div class="starter-template">
 
         <h1>Midsouth Con Panel Information</h1>
+        <% if user_signed_in? %>
         <p>
           <%= link_to "Apply to be a panelist!", panelist_forms_path%>
         </p>   
+        <%end%>
               
       </div>
 

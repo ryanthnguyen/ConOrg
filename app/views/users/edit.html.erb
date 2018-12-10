@@ -1,6 +1,6 @@
-<main role="main" class="container">
+<% content_for :content do %>
+    <main role="main" class="container">
 
-    <h1>Edit User</h1>
 
     <%= render 'form', user: @user%>
 
@@ -121,7 +121,5 @@
         <%= link_to 'New Game Application', new_gm_form2_path(@user) %> <br> 
         </p>
 
-<p>
-    <%= link_to 'Home', home_path%>
-</p>
+<%end%>
 </main><!-- /.container -->

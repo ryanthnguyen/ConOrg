@@ -1,11 +1,11 @@
-<main role="main" class="container">
 
-    <h1>New GM Form 1</h1>
+<% content_for :content do %>
+
+    <main role="main" class="container">
+    
 
 
     <%= render 'form', user_id: @user.id, gm_form1: @gm_form1%>
 
-<p>
-    <%= link_to 'Back', users_path %>
-</p>
+<%end%>
 </main><!-- /.container -->

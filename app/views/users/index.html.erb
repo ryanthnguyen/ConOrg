@@ -1,7 +1,7 @@
-<main role="main" class="container">
-
+<% content_for :content do %>
+    <main role="main" class="container">
 <h1>User Forms</h1>
-<%if current_user.admin == true%>
+<% if user_signed_in? && current_user.admin == true%>
 <table class="table table-sm">
   <thead>
     <tr>
@@ -20,6 +20,31 @@
         <td><%= link_to "Edit", edit_user_path(user)%>
         <%= link_to 'destroy', user_path(user), method: :delete %>
         </td>
+        
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%elsif user_signed_in?%>
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">User</th>
+      <th scope="col">Name</th>
+      <th scope="col">Admin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+        <td><%= user.email %></td>
+        <td><%= user.first_name %></td>
+        <%if user.admin == true%>
+        <td>Admin</td>
+        <%else%>
+        <td>Normal User</td>
+        <%end%>
         
     </tr>
     <% end %>
@@ -49,8 +74,9 @@
     <% end %>
   </tbody>
 </table>
+      <p>
+          <%= link_to "Register", new_user_registration_path%>
+        </p>   
 <%end%>
-<p>
-  <%= link_to 'Home', home_path %> <br> 
-</p>
+<%end%>
 </main><!-- /.container -->

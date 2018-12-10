@@ -1,7 +1,8 @@
-<main role="main" class="container">
-
+<% content_for :content do %>
+    <main role="main" class="container">
 <h1>Panelists</h1>
-  <%if current_user.admin == true%>
+<% if user_signed_in? && current_user.admin == true%>
+
   <table class="table table-sm">
     <thead>
       <tr>
@@ -39,6 +40,9 @@
       <% end %>
     </tbody>
   </table>
+
+
+
 <%else%>
   <table class="table table-sm">
     <thead>
@@ -65,8 +69,10 @@
     </tbody>
   </table>
 <%end%>
-<p>
-  <%= link_to 'Schedule', schedule_path %> <br>
-  <%= link_to 'Home', home_path %> <br>  
-</p>
+<% if user_signed_in? %>
+        <p>
+          <%= link_to "Apply to be a panelist!", new_panelist_form_path(current_user)%>
+        </p>   
+<%end%>
+<%end%>
 </main><!-- /.container -->

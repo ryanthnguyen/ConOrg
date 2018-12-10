@@ -1,3 +1,5 @@
+<% content_for :content do %>
+    <main role="main" class="container">
 <%= form_with model: @panelist_form, local: true do |form| %>
      <%= hidden_field_tag :user_id, user_id %>
      <div class="field">
@@ -72,3 +74,5 @@
         <%= form.submit 'Update panelist_form', class: 'btn btn-primary'%>
         </div>
     <% end %>
+    <%end%>
+    </main>
