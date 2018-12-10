@@ -1,18 +1,77 @@
 <% provide(:title, 'Event Info')%>
-
+<% content_for :content do %>
     <main role="main" class="container">
+  
+      <h1>About</h1>
 
-      <div class="starter-template">
+      <p> MidSouthCon is presented by Mid-South Science and Fictions Conventions, Inc. 
+      A 501(c)3 non-profit corporation who uses the convention to promote education and 
+      raise money for charities like Literacy Mid-South and the Science Fiction Writers of 
+      America Emergency Medical Fund. Over the years we have raised over $65,000 for our charities.
+      </p>
+      <p>MidSouthCon is the longest-running annual fan-run multi-genre Science Fiction Convention 
+      in the Mid-South.  It covers a diverse section of fannish culture that includes science fiction, 
+      fantasy, science, comics, horror, education, costuming, anime, and gaming. MidSouthCon has an 
+      average of 2200 attendees, including over 100 authors, editors, publishers, scientists, 
+      artists and other guests and panelists. It features  more then 200 hours of programing, 
+      including panels, our annual Art and and Charity Auctions, Masquerade costume contest, 
+      and more. There are also hundreds of hours of gaming running non-stop throughout the weekend.
+      </p>
+      <p>In addition to all the programing and gaming, MidSouthCon has all the staples of traditional 
+      science fiction conventions, including a first class Art Show featuring art for sale by artists 
+      from across the country, a well-stocked Dealer’s Room with venders selling a wide variety of 
+      genre items, and a Con-Suite with free sodas and munchies where you can quench your thirst, 
+      sate your appetite, and schmooze with other attendees.
+      </p>
 
-        <h1>Midsouth Con Information</h1>
-        
-        <p>
-        <%= link_to "Hotels", hotels_path%><br>
-        <%= link_to "Pricing Information", pricinginformation_path%><br>
-        <%= link_to "Home", home_path %>
-        </p>
-              
-              
-        </div>
+      <h1>Contact Information</h1>
+
+      <ul>
+        <li>General Information:  <%= mail_to("Info", "info@midsouthcon.org") %></li>
+        <li>Programming:  <%= mail_to("Programming", "programming@midsouthcon.org") %></li>
+        <li>Gaming: <%= mail_to("Gaming", "gaming@midsouthcon.org") %></li>
+        <li>Volunteers: <%= mail_to("Volunteers", "volunteers@midsouthcon.org") %></li>
+        <li>Registration: <%= mail_to("Registration", "registration@midsouthcon.org") %></li>
+        <li>Dealer's Room: <%= mail_to("Dealer's Room", "dealers@midsouthcon.org") %></li>
+        <li>Art Show: <%= mail_to("Art Show", "artshow@midsouthcon.org") %></li>
+      </ul>
+
+      <h1>Convention Committee</h1>
+
+      <p>Below is a list of our Convention Committee (ConComm) meetings for this year. 
+      We have subcommittee meetings throughout the year. The main ConComm meetings are 
+      held at the Benjamin L. Hooks Central Library at 3030 Poplar Ave in Memphis and 
+      reflect the Meeting Room assigned. Unless otherwise noted at the library itself, 
+      we have been assigned Meeting Room C for 2018. Meetings are usually streamed online 
+      <%= link_to "here", "http://original.livestream.com/midsouthcon" %>.
+      </p>
+
+      <h2>2018 ConComm Meetings</h2>
+      <ul>
+        <li>July 15, 2018 - 2pm - Benjamin L. Hooks Central Library</li>
+        <li>August 19, 2018 - 2pm - Benjamin L. Hooks Central Library</li>
+        <li>September 16, 2018 - 2pm - Benjamin L. Hooks Central Library</li>
+        <li>October 14, 2018 - 2pm - Benjamin L. Hooks Central Library</li>
+        <li>November 18, 2018 - 2pm - Benjamin L. Hooks Central Library</li>
+        <li>December 16, 2018 - 2pm - Benjamin L. Hooks Central Library</li>
+      </ul>
+
+      <p>If you are interested in programming, our Programming committee meetings are 
+      listed below.  They are held on the dates listed at the Germantown Community Library, 
+      1925 Exeter Rd, Germantown, TN 38138 from 6:30pm to 8:00pm. All meetings are on 
+      Wednesday in 2018.
+      </p>
+
+      <h2>2018 Programming Meetings</h2>
+      <ul>
+        <li>July 11, 2018 - 6:30pm - Germantown Community Library</li>
+        <li>August 8, 2018 - 6:30pm - Germantown Community Library</li>
+        <li>September 12, 2018 - 6:30pm - Germantown Community Library</li>
+        <li>October 10, 2018 - 6:30pm - Germantown Community Library</li>
+        <li>November 14, 2018 - 6:30pm - Germantown Community Library</li>
+        <li>December 12, 2018 - 6:30pm - Germantown Community Library</li>
+      </ul>
+
 
     </main><!-- /.container -->
+<%end%>

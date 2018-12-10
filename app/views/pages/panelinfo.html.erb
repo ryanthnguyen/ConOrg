@@ -1,17 +1,15 @@
 <% provide(:title, 'Panel Info')%>
-
+  <% content_for :content do %>
     <main role="main" class="container">
 
       <div class="starter-template">
 
         <h1>Midsouth Con Panel Information</h1>
-        
         <p>
-        <%= link_to "Back", schedule_path%><br>
-        <%= link_to "Home", home_path %>
-        </p>
+          <%= link_to "Apply to be a panelist!", panelist_forms_path%>
+        </p>   
               
-              
-        </div>
+      </div>
 
     </main><!-- /.container -->
+  <%end%>

@@ -17,7 +17,14 @@ Rails.application.routes.draw do
   get 'dealerinfo', to: 'pages#dealerinfo', as: 'dealerinfo'
   get 'applications', to: 'pages#applications', as: 'applications'
 
-
+  get 'authorgoh', to: 'pages#authorgoh', as: 'authorgoh'
+  get 'artistgoh', to: 'pages#artistgoh', as: 'artistgoh'
+  get 'comicsgoh', to: 'pages#comicsgoh', as: 'comicsgoh'
+  get 'sciencegoh', to: 'pages#sciencegoh', as: 'sciencegoh'
+  get 'costuminggoh', to: 'pages#costuminggoh', as: 'costuminggoh'
+  get 'editorgoh', to: 'pages#editorgoh', as: 'editorgoh'
+  get 'gaminggoh', to: 'pages#gaminggoh', as: 'gaminggoh'
+  get 'toastmaster', to: 'pages#toastmaster', as: 'toastmaster'
 
 
   get 'users', to: 'users#index', as: 'users'
