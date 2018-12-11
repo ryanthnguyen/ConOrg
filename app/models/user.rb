@@ -45,9 +45,9 @@ class User < ApplicationRecord
   validates :email, format: { with: /(\A([a-z]*\s*)*\<*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\>*\Z)/i }, uniqueness: true, presence: true
   validates :first_name, length: { maximum: 50 }, presence: true
   validates :last_name, length: { maximum: 50 }, presence: true
-  validates :membership_type, inclusion: {in: ["Consuite Giveaway", "Banquet Tickets", "Child Pre-Regitration", "Adult Pre-Registration"]}
-  validates :middle_name, length: { maximum: 50 }, presence: true
-  validates :phone, numericality: {only_integer: true}, presence: true
+  validates :membership_type, inclusion: {in: ["Consuite Giveaway", "Banquet Tickets", "Child Pre-Regitration", "Adult Pre-Registration"]}, allow_blank: true
+  validates :middle_name, length: { maximum: 50 }
+  validates :phone, numericality: {only_integer: true}
   validates :state, inclusion: {in: %w[AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY]}, presence: true
   validates :zip, numericality: {only_integer: true}, presence: true
 end
