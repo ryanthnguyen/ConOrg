@@ -30,7 +30,7 @@
   </div>
   <div class="field">
     <%= f.label :state %><br />
-    <%= f.text_field :state, autofocus: true, autocomplete: "Sate" %>
+    <%= f.select :state, options_for_select(["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]), autocomplete: "Sate" %>
   </div>
   <div class="field">
     <%= f.label :zip %><br />
@@ -42,11 +42,11 @@
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "phone" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
   <div class="field">
     <%= f.label :membership_type %><br />
-    <%= f.text_field :membership_type, autofocus: true, autocomplete: "Membership Type" %>
+    <%= f.select :membership_type, options_for_select(["Consuite Giveaway", "Banquet Tickets", "Child Pre-Regitration", "Adult Pre-Registration"]), autocomplete: "Membership Type" %>
   </div>
   <div class="field">
     <%= f.label :password %>
