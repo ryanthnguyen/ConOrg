@@ -28,19 +28,19 @@
 class GmForm2 < ApplicationRecord
   belongs_to :user, class_name: 'User', foreign_key: 'user_id', inverse_of: :gm_form2s, optional: true
   belongs_to :admin, class_name: 'Admin', foreign_key: 'admin_id', inverse_of: :gm_form2s, optional: true
-  validates :age_restriction, inclusion: {in: ["Youth", "Suitable for all ages", "Teen","Adult"]}
-  validates :game_attitude, inclusion: {in: ["Very serious", "Serious", "Fun","Silly","Very silly"]}
-  validates :game_description, length: { maximum: 800 }
-  validates :game_system_used, length: { maximum: 300 }
-  validates :info_for_staff, length: {maximum: 1000}
-  validates :materials_needed, inclusion: {in: ["All materials for the game are provided by the gm", "All materials for the game are offered, but players can bring their own", "All players are required to bring their own materials"]}
-  validates :maximum_number_of_players, numericality: {only_integer: true}
-  validates :minimum_number_of_players, numericality: {only_integer: true}
-  validates :player_experience, inclusion: {in: ["Beginners only", "Beginners welcome", "Basic knowledge", "Experts"]}
-  validates :start_time_first_choice, length: {maximum: 50}
-  validates :start_time_second_choice, length: {maximum: 50}
-  validates :start_time_third_choice, length: {maximum: 50}
-  validates :time_needed_for_game, length: {maximum: 20}
-  validates :title_of_adventure_or_session, length: {maximum: 50}
-  validates :type_of_game, inclusion: {in: ["Role playing game", "Live action role playing", "Collectible card game","Miniatures", "Board game", "Card game", "Other"]}
+  validates :age_restriction, inclusion: {in: ["Youth", "Suitable for all ages", "Teen","Adult"]}, presence: true
+  validates :game_attitude, inclusion: {in: ["Very serious", "Serious", "Fun","Silly","Very silly"]}, presence: true
+  validates :game_description, length: { maximum: 800 }, presence: true
+  validates :game_system_used, length: { maximum: 300 }, presence: true
+  validates :info_for_staff, length: {maximum: 1000}, presence: true
+  validates :materials_needed, inclusion: {in: ["All materials for the game are provided by the gm", "All materials for the game are offered, but players can bring their own", "All players are required to bring their own materials"]}, presence: true
+  validates :maximum_number_of_players, numericality: {only_integer: true}, presence: true
+  validates :minimum_number_of_players, numericality: {only_integer: true}, presence: true
+  validates :player_experience, inclusion: {in: ["Beginners only", "Beginners welcome", "Basic knowledge", "Experts"]}, presence: true
+  validates :start_time_first_choice, length: {maximum: 50}, presence: true
+  validates :start_time_second_choice, length: {maximum: 50}, presence: true
+  validates :start_time_third_choice, length: {maximum: 50}, presence: true
+  validates :time_needed_for_game, length: {maximum: 20}, presence: true
+  validates :title_of_adventure_or_session, length: {maximum: 100}, presence: true
+  validates :type_of_game, inclusion: {in: ["Role playing game", "Live action role playing", "Collectible card game","Miniatures", "Board game", "Card game", "Other"]}, presence: true
 end

@@ -15,7 +15,7 @@
       <% @gm_form2s.each do |gm_form2| %>
         <tr>
           <td><%= gm_form2.user.first_name %> <%= gm_form2.user.last_name %></td>
-            <td><%= gm_form2.games %></td>
+            <td><%= gm_form2.title_of_adventure_or_session %></td>
             <%if gm_form2.approved == true%>
             <td>Approved</td>
             <%else%>
