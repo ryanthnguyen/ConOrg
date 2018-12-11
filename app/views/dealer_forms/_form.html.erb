@@ -24,7 +24,7 @@
     </div>
     <div class="field">
         <%= form.label :display_require_AC_power %>
-        <%= form.text_field :display_require_AC_power, class: 'form-control' %>
+        <%= form.select :display_require_AC_power, options_for_select(["yes","no"], selected: @dealer_form.display_require_AC_power), class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :number_of_memberships %>
@@ -37,7 +37,7 @@
     <%if current_user.admin == true%>
     <div class="field">
         <%= form.label :approved %>
-        <%= form.text_field :approved, class: 'form-control' %>
+        <%= form.select :approved, options_for_select(["false","true"], selected: @dealer_form.admin),class: 'form-control' %>
     </div>
     <%end%>
         <div class="actions">

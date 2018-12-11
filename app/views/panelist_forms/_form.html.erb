@@ -25,19 +25,19 @@
     </div>
     <div class="field">
         <%= form.label :primary_professional_focus %>
-        <%= form.text_field :primary_professional_focus, class: 'form-control' %>
+        <%= form.select :primary_professional_focus, options_for_select(["Anime", "Art/Jewelry", "Children's/YA", "Comics", "Costuming", "Gaming", "Movies/TV", "Music/Dance", "Paranormal", "Science", "Literary"], selected: @panelist_form.primary_professional_focus),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :secondary_professional_focus %>
-        <%= form.text_field :secondary_professional_focus, class: 'form-control' %>
+        <%= form.select :secondary_professional_focus, options_for_select(["Anime", "Art/Jewelry", "Children's/YA" ,"Comics", "Costuming", "Gaming", "Movies/TV", "Music/Dance", "Paranormal", "Science", "Literary"], selected: @panelist_form.secondary_professional_focus),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :panelist_before %>
-        <%= form.text_field :panelist_before, class: 'form-control' %>
+        <%= form.select :panelist_before, options_for_select(["false", "true"], selected: @panelist_form.panelist_before),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :time_in_pro_row %>
-        <%= form.text_field :time_in_pro_row, class: 'form-control' %>
+        <%= form.select :time_in_pro_row,options_for_select(["false", "true"], selected: @panelist_form.time_in_pro_row), class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :amount_of_pro_row %>
@@ -45,7 +45,7 @@
     </div>
     <div class="field">
         <%= form.label :place_art_in_art_room %>
-        <%= form.text_field :place_art_in_art_room, class: 'form-control' %>
+        <%= form.select :place_art_in_art_room, options_for_select(["false", "true"], selected: @panelist_form.place_art_in_art_room),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :recent_credits %>
@@ -66,7 +66,7 @@
     <%if current_user.admin == true%>
     <div class="field">
         <%= form.label :approved %>
-        <%= form.text_field :approved, class: 'form-control' %>
+        <%= form.text_field :approved, options_for_select(["false", "true"], selected: @panelist_form.approved),class: 'form-control' %>
     </div>
     <%end%>
         <div class="actions">

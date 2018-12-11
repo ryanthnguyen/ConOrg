@@ -8,7 +8,7 @@
     </div>
     <div class="field">
         <%= form.label :type_of_game %>
-        <%= form.text_field :type_of_game, class: 'form-control' %>
+        <%= form.select :type_of_game, options_for_select(["Role playing game", "Live action role playing", "Collectible card game","Miniatures", "Board game", "Card game", "Other"], selected: @gm_form2.type_of_game),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :game_system_used %>
@@ -20,19 +20,19 @@
     </div>
     <div class="field">
         <%= form.label :materials_needed %>
-        <%= form.text_field :materials_needed, class: 'form-control' %>
+        <%= form.select :materials_needed, options_for_select(["All materials for the game are provided by the gm", "All materials for the game are offered, but players can bring their own", "All players are required to bring their own materials"], selected: @gm_form2.materials_needed), class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :player_experience %>
-        <%= form.text_field :player_experience, class: 'form-control' %>
+        <%= form.select :player_experience, options_for_select(["Beginners only", "Beginners welcome", "Basic knowledge", "Experts"], selected: @gm_form2.player_experience),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :game_attitude %>
-        <%= form.text_field :game_attitude, class: 'form-control' %>
+        <%= form.select :game_attitude, options_for_select(["Very serious", "Serious", "Fun","Silly","Very silly"], selected: @gm_form2.game_attitude),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :age_restriction %>
-        <%= form.text_field :age_restriction, class: 'form-control' %>
+        <%= form.select :age_restriction, options_for_select(["Youth", "Suitable for all ages", "Teen","Adult"], selected: @gm_form2.age_restriction),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :start_time_first_choice %>
@@ -65,7 +65,7 @@
     <%if current_user.admin == true%>
     <div class="field">
         <%= form.label :approved %>
-        <%= form.text_field :approved, class: 'form-control' %>
+        <%= form.select :approved, options_for_select(["false", "true"], selected: @gm_form2.approved),class: 'form-control' %>
     </div>
     <%end%>
         <div class="actions">

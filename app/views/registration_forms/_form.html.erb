@@ -2,11 +2,11 @@
      <%= hidden_field_tag :user_id, user_id%>
     <div class="field">
         <%= form.label :different_prices %>
-        <%= form.text_field :different_prices, class: 'form-control' %>
+        <%= form.select :different_prices, options_for_select([10, 25, 35, 17.50], selected: @registration_form.different_prices),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :payment_type %>
-        <%= form.text_field :payment_type, class: 'form-control' %>
+        <%= form.select :payment_type, options_for_select(["credit", "debit"], selected: @registration_form.payment_type),class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :coupon_codes %>

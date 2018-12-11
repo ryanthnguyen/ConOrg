@@ -8,7 +8,7 @@
     </div>
     <div class="field">
         <%= form.label :t_shirt_size %>
-        <%= form.text_field :t_shirt_size, class: 'form-control' %>
+        <%= form.select :t_shirt_size, options_for_select(["S", "M","L","XL","2X","3X","4X"], selected: @gm_form1.t_shirt_size), class: 'form-control' %>
     </div>
     <div class="field">
         <%= form.label :info_for_staff %>
@@ -17,7 +17,7 @@
     <%if current_user.admin == true%>
     <div class="field">
         <%= form.label :approved %>
-        <%= form.text_field :approved, class: 'form-control' %>
+        <%= form.select :approved, options_for_select(["false","true"], selected: @gm_form1.approved),class: 'form-control' %>
     </div>
     <%end%>
         <div class="actions">
