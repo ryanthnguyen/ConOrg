@@ -167,7 +167,7 @@
         
                 <% @user.gm_form2s.each do |gm_form2| %>
                 <tr>
-                    <td><%= gm_form2.games %></td>
+                    <td><%= gm_form2.title_of_adventure_or_session %></td>
                     <td></td>
                     <td></td>
                     <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
