@@ -18,25 +18,25 @@
 
 - Description: An approval table will be added to the GM, Panelist, and Dealer Forms that can be edited by an admin only.
 - How to Evaluate: The admin can successfully change the table value to true, while a standard user cannot.
-- Outcome of Task:
+- Outcome of Task: All application forms can be approved by an admin.
 
 ### Task 2: Show Approved Data
 
 - Description: Only the approved applications will show information on the relevant information pages.
 - How to Evaluate: Viewing the information pages does not display any information for items not yet approved.
-- Outcome of Task:
+- Outcome of Task: Useful approved data is displayed to ordinary and non members on information pages.
 
 ### Task 3: Modify Controllers for Admin Use
 
 - Description: Controllers will be set up such that it can be determined if the person is an admin or a user.
 - How to Evaluate: A user will not be able to see what an admin can see when going to edit applications, such as approval status.
-- Outcome of Task:
+- Outcome of Task: All controllers determine the proper user and subsequent applications when being edited.
 
 ### Task 4: Create Admin Specific Edit and Show Pages
 
 - Description: Alternative show and edit pages will be made for the admin specific purposes.
 - How to Evaluate: An admin can see all data fields in each application, with the ability to edit or delete them.
-- Outcome of Task:
+- Outcome of Task: all applications and user edit pages are shown to admins with all of the form data being modifiable.
 
 ### Task 5: Information Display Editing
 
