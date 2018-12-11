@@ -30,17 +30,17 @@
 one:
   title_of_adventure_or_session: "DnD"
   type_of_game: "Role playing game"
-  game_system_used: "None"
+  game_system_used: "N/A"
   time_needed_for_game: "3 hours"
-  minimum_number_of_players: 4
-  maximum_number_of_players: 8
   materials_needed: "All materials for the game are provided by the gm"
-  player_experience: "Beginnners only"
+  player_experience: "Beginners only"
   game_attitude: "Serious"
   age_restriction: "Suitable for all ages"
   start_time_first_choice: "Friday 2:00pm"
   start_time_second_choice: "Saturday 2:00am"
   start_time_third_choice: "Friday 8:00pm"
+  minimum_number_of_players: 4
+  maximum_number_of_players: 8
   game_description: "Come in and role play with us, we have cookies"
   info_for_staff: "Please provide enough chairs for players and food"
 
