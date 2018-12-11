@@ -76,7 +76,7 @@
         <thead>
             <tr>
             <th scope="col">Title        </th>
-            <th scope="col"></th>
+            <th scope="col">Approved</th>
             <th scope="col"></th>
             <th scope="col"></th>
             </tr>
@@ -85,7 +85,11 @@
             <% @user.panelist_forms.each do |panelist_form| %>
             <tr>
                 <td><%= panelist_form.title %></td>
-                <td></td>
+                <%if panelist_form.approved == true%>
+                <td>Approved</td>
+                <%else%>
+                <td>Not Approved</td>
+                <%end%>
                 <td></td>
                 <td><%= link_to 'edit', edit_panelist_form_path(panelist_form) %>
                 <%= link_to 'destroy', panelist_form_path(panelist_form), method: :delete %>
@@ -103,7 +107,7 @@
         <thead>
             <tr>
             <th scope="col">Business Name</th>
-            <th scope="col"></th>
+            <th scope="col">Approved</th>
             <th scope="col"></th>
             <th scope="col"></th>
             </tr>
@@ -112,7 +116,11 @@
             <% @user.dealer_forms.each do |dealer_form| %>
             <tr>
                 <td><%= dealer_form.business_name %></td>
-                <td></td>
+                <%if dealer_form.approved == true%>
+                <td>Approved</td>
+                <%else%>
+                <td>Not Approved</td>
+                <%end%>
                 <td></td>
                 <td><%= link_to 'edit', edit_dealer_form_path(dealer_form) %>
                 <%= link_to 'destroy', dealer_form_path(dealer_form), method: :delete %>
@@ -130,7 +138,7 @@
         <thead>
             <tr>
             <th scope="col">badge name         </th>
-            <th scope="col"></th>
+            <th scope="col">Approved</th>
             <th scope="col"></th>
             <th scope="col"></th>
             </tr>
@@ -139,7 +147,11 @@
             <% @user.gm_form1s.each do |gm_form1| %>
             <tr>
                 <td><%= gm_form1.name_on_badge %></td>
-                <td></td>
+                <%if gm_form1.approved == true%>
+                <td>Approved</td>
+                <%else%>
+                <td>Not Approved</td>
+                <%end%>
                 <td></td>
                 <td><%= link_to 'edit', edit_gm_form1_path(gm_form1) %>
                 <%= link_to 'destroy', gm_form1_path(gm_form1), method: :delete %>
@@ -158,7 +170,7 @@
         <thead>
             <tr>
             <th scope="col">Game        </th>
-            <th scope="col"></th>
+            <th scope="col">Approved</th>
             <th scope="col"></th>
             <th scope="col"></th>
             </tr>
@@ -168,7 +180,11 @@
                 <% @user.gm_form2s.each do |gm_form2| %>
                 <tr>
                     <td><%= gm_form2.title_of_adventure_or_session %></td>
-                    <td></td>
+                    <%if gm_form2.approved == true%>
+                    <td>Approved</td>
+                    <%else%>
+                    <td>Not Approved</td>
+                    <%end%>
                     <td></td>
                     <td><%= link_to 'edit', edit_gm_form2_path(gm_form2) %>
                     <%= link_to 'destroy', gm_form2_path(gm_form2), method: :delete %>
