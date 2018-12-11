@@ -18,12 +18,13 @@
 <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
 </p>
 
-<ul>
-<li class="nav-item"><%= link_to "Panelists", panelist_forms_path%></li>
-<li class="nav-item"><%= link_to "Game Masters", gm_form1s_path%></li>
-<li class="nav-item"><%= link_to "Gaming", gm_form2s_path%></li>
-<li class="nav-item"><%= link_to "Dealers", dealer_forms_path%></li>
-</ul>
+
+<%= link_to "Panelists", panelist_forms_path%> |
+ <%= link_to "Game Masters", gm_form1s_path%> |
+ <%= link_to "Gaming", gm_form2s_path%> |
+ <%= link_to "Dealers", dealer_forms_path%> |
+  <%= link_to "Users", users_path%>
+
 
 <%else%>
 
