@@ -10,7 +10,7 @@
 - Video Demo Creators:
   - xxx
   - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
-- Demo-Booth Operator: xxx
+- Demo-Booth Operator: Ryan Nguyen, Wesley Jones
 
 ## Tasks: Wesley Jones
 
@@ -42,7 +42,7 @@
 
 - Description: Information pages will be modified such that the data is presented in a clean manner.
 - How to Evaluate: Lines are even, and links such as edit, etc. are aligned.
-- Outcome of Task:
+- Outcome of Task: Information is formatted into an easily readable state.
 
 ## Tasks: Ryan Nguyen
 
@@ -50,19 +50,19 @@
 
 - Description: Update the models, databases, and validations
 - How to Evaluate: check the source code
-- Outcome of Task: xxx
+- Outcome of Task: Models are up to date with data that better represents them and is useable. Validations all work properly.
 
 ### Task 2: Unit Testing
 
 - Description: Create unit testings for the models
 - How to Evaluate: check the unit tests in the test folder
-- Outcome of Task: xxx
+- Outcome of Task: Models all pass the tests.
 
 ### Task 3: Forms
 
 - Description: Create general form and link it to all the form pages
 - How to Evaluate: Able to create specific forms in each form page
-- Outcome of Task: xxx
+- Outcome of Task: Forms properly represent each application submitted.
 
 ## Tasks: Josh Rhoades
 
@@ -76,13 +76,13 @@
 
 - Description: Perform input validation on user logins for security purposes. For example, make sure to not be vulnerable to SQL injections via the login.
 - How to Evaluate: Try a basic SQL injection.
-- Outcome of Task: xxx
+- Outcome of Task: Handled by Devise.
 
 ### Task 3: General Login Credentials
 
 - Description: Create a login portal for users so they are able to securely submit applications.
 - How to Evaluate: Create a user login and boom!
-- Outcome of Task: xxx
+- Outcome of Task: Handled by Devise.
 
 ## Tasks: Xavier Tilley
 
@@ -90,10 +90,10 @@
 
 - Description: Create static information pages to inform site visitors about the convention.
 - How to Evaluate: Guest, Panelist, Gaming, Hotel, and About pages should exist, be readable and be routed to properly.
-- Outcome of Task: xxx
+- Outcome of Task: Static pages exist and show relevant information.
 
 ### Task 2: Style the pages
 
 - Description: Create CSS files to properly style the pages of the site.
 - How to Evaluate: The pages should reflect the appropriate wireframe.
-- Outcome of Task: xxx
+- Outcome of Task: Styling effectively covers every page, and makes the site easy to navigate.

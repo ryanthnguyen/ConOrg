@@ -3,11 +3,11 @@
 - Team: ConOrg
 - GitHub Repo URL: https://github.com/memphis-cs-projects/comp4081-ConOrg.git
 - Demo Video URL: https://www.youtube.com/watch?v=7ubHRmzbOX4
-- Git Tag for Demo Video Version of Code: milestone1
+- Git Tag for Demo Video Version of Code: milestone2
 
 ## File Locations in Repository
 
-- Milestone 1 individual assignments and outcomes: comp4081-ConOrg/docs/IndividualAssignmentSpecs.md
+- Milestone 2 individual assignments and outcomes: comp4081-ConOrg/docs/IndividualAssignmentSpecsIteration2.md
 - Who-Did-What Document for Demo Video: comp4081-ConOrg/docs/Demo_Vid_Tasks.txt
 - Up-to-Date Requirements and Design Artifacts:
   - User stories: comp4081-ConOrg/docs/UserStories.md
@@ -17,4 +17,9 @@
 
 ## Running Instructions
 
-- When creating a user or various applications, please follow the validations listed in the model.rb's to be successful
+- Upon cloning the repo and moving into its directory, you may need to run "bundle update rails" to solve a few gem conflicts.
+- Obviously be sure to run rake db:setup as well.
+- Seed data exists for an admin and a user. Admin (email: whjones@memphis.edu  pass: google) , user (email: john@smith.edu     pass: tester)
+- for a user to see game applications, an admin must first approve their gm application.
+- for any date/panel/game info to be visible on the site in general, an application must be approved. upon approval, it will be added to the information pages.
+- All applications can be approved from the admin page, with link to the respective indeces of application types.
