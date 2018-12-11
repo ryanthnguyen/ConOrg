@@ -18,24 +18,14 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   first_name: MyString
-#   last_name: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   age: 1
-#   email_address: MyString
-#   phone: 1
+one:
+  first_name: "Quoc"
+  last_name: "Nguyen"
+  address: "1322 Ravenna Cove"
+  city: "Memphis"
+  state: 'TN'
+  zip: 1213
+  age: 26
+  email_address: quocthnguyen0842@gmail.com
+  phone: 9013532322
 
-# two:
-#   first_name: MyString
-#   last_name: MyString
-#   address: MyString
-#   city: MyString
-#   state: MyString
-#   zip: 1
-#   age: 1
-#   email_address: MyString
-#   phone: 1
