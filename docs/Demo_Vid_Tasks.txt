@@ -1,7 +1,7 @@
-whjones - Model associations, forms, CRUD, Sitemapping
-rmtilley - wireframe for homepage
+whjones - Model associations, forms, CRUD, Sitemapping | 
+rmtilley - wireframe for homepage, Overall Styling | 
 jrrhades - added login, started admin page
-qtquoc - created models, databases, and validations
+ | qtquoc - created models, databases, and validations
 
 Workflow: 
 	views rmtilley/whjones/jrrhades

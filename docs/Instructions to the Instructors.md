@@ -2,7 +2,7 @@
 
 - Team: ConOrg
 - GitHub Repo URL: https://github.com/memphis-cs-projects/comp4081-ConOrg.git
-- Demo Video URL: https://www.youtube.com/watch?v=7ubHRmzbOX4
+- Demo Video URL: https://youtu.be/fCVuBvz_-NY
 - Git Tag for Demo Video Version of Code: milestone2
 
 ## File Locations in Repository
