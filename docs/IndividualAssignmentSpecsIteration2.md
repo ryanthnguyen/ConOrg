@@ -10,7 +10,7 @@
 - Video Demo Creators:
   - xxx
   - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
-- Demo-Booth Operator: Ryan Nguyen, Wesley Jones
+- Demo-Booth Operator: Ryan Nguyen, Wesley Jones, Xavier Tilley
 
 ## Tasks: Wesley Jones
 
