@@ -22,4 +22,5 @@
 - Seed data exists for an admin and a user. Admin (email: whjones@memphis.edu  pass: google) , user (email: john@smith.edu     pass: tester)
 - for a user to see game applications, an admin must first approve their gm application.
 - for any date/panel/game info to be visible on the site in general, an application must be approved. upon approval, it will be added to the information pages.
-- All applications can be approved from the admin page, with link to the respective indeces of application types.
+- All applications can be approved from the admin page, with link to the respective indices of application types.
+- mini-racer may need to be comment out of the gem file as one member needed it to view the site.
