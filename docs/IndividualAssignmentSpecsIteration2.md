@@ -5,10 +5,10 @@
 
 ## Special Roles
 
-- Project Coordinator: xxx
-- Quality Assurance Czar: xxx
+- Project Coordinator: Xavier Tilley
+- Quality Assurance Czar: Wesley Jones
 - Video Demo Creators:
-  - xxx
+  - Josh Rhoades
   - xxx, 999 (Team Member Name, Number of Points; filled in at end of iteration)
 - Demo-Booth Operator: Ryan Nguyen, Wesley Jones, Xavier Tilley
 
