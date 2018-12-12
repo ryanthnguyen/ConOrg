@@ -70,7 +70,7 @@
 
 - Description: Create an Admin user paged based off the general wire-frame provided so that information is able to be checked as well as edited easily from one main page.
 - How to Evaluate: Check page views once completed and then use the available options to view data.
-- Outcome of Task: xxx
+- Outcome of Task: Deferred
 
 ### Task 2: Input Validation on Login Credentials
 
