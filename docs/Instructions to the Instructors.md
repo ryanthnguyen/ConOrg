@@ -1,4 +1,4 @@
-# Milestone 1 - Instructions to the Instructors
+# Milestone 2 - Instructions to the Instructors
 
 - Team: ConOrg
 - GitHub Repo URL: https://github.com/memphis-cs-projects/comp4081-ConOrg.git
