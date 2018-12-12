@@ -66,7 +66,7 @@
     <%if current_user.admin == true%>
     <div class="field">
         <%= form.label :approved %>
-        <%= form.text_field :approved, options_for_select(["false", "true"], selected: @panelist_form.approved),class: 'form-control' %>
+        <%= form.select :approved, options_for_select(["false", "true"], selected: @panelist_form.approved),class: 'form-control' %>
     </div>
     <%end%>
         <div class="actions">
